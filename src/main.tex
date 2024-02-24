@@ -12,13 +12,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage{verbatim}
 %Källor
 \addbibresource{references.bib}
 \graphicspath{ {./images/} }
 
 % Lite variabler
 \def\email{levi.hogdal@ga.ntig.se}
-\def\foottitle{PMmall}
+\def\foottitle{Gymnasiearbete}
 \def\name{Levi Högdal}
 
 \title{PMmall \\ \small Gymnasiearbete}
@@ -42,7 +43,15 @@
     \setlength{\parskip}{10pt}
 
     \maketitle
+    \begin{center}
+    \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
+    \end{center}
 
+    \newpage
+    \section{Abstract}
+    abstract
+    \newpage
+    \tableofcontents
     \newpage
 
     \section{Inledning}
@@ -52,6 +61,8 @@
     Om man har någon funktionsnedsättning eller om det är väldigt dålig kontrast på en hemsida så blir den svår att använda.
     För att underlätta så att allt inte är kaos och användaren ska kunna använda hemsidan på ett bra sätt har en organisation som heter W3C skapat standarder(WCAG) för användbarhet på hemsidor.
     Hur mycket hemsidor förhåller sig till WCAG standarden är varierande men jag är intresserad i hur olika kommunala hemsidor förhåller sig till dem.
+    
+    \subsection{Syfte och frågeställning}
     Det jag vill undersöka är:
     Vilka WCAG2.2 krav uppfyller kommuners hemsidor och vilka skillnader finns det i kraven som kommunerna uppfyller.
 
@@ -66,21 +77,38 @@
     För att hemsidor ska se vettiga ut och användas av folk med funktionsnedsättningar så görs standarder som man kan följa när man skapar hemsidor och olika lagar.
     Webbstandarden som den här undersökningen kommer hålla sig till är WCAG.
 
-    \subsection{WCAG 2.2}
-    WCAG är en webbstandard som är skapad av W3C.
+    \subsection{Hyper text markup language}
+    Html står för hyper text markup language och är standardspråket som hemsidor är gjorda av.
+    Html är uppbyggt av element [Förklara element med källa]
+    Programmet wave som används i undersökningen och förklaras senare tillåt att stänga av "STYLE" vilket är css.
+    Om man öppnar en sida och använde wave för att stänga av css så kommer sidan att
+    
+    \subsubsection{CSS}
+    
+    \subsubsection{ARIA}
+
+    \subsection{WCAG}
+    WCAG är webbstandarden som skapas av W3C.
     Enligt \textcite{W3C} är W3C ett företag som grundades 1994 av Tim Berners-Lee för att säkerställa webbens utveckling och framtid.
-    För att åstadkomma det målet släpper W3C olika standarder och riktlinjer för webben.
-    WCAG 2.0 är en samling av olika rekommendationer som alla ska kunna testas separat och inte riktas mot någon specific teknologi utan webben skännerält. \parencite{WCAG_2.0}
+    För att åstadkomma det målet släpper W3C olika standarder och riktlinjer för webben så att alla personer ska kunna använda webben.
+    WCAG är en samling av olika rekommendationer som alla ska kunna testas separat och inte riktas mot någon specific teknologi utan webben skännerält. \parencite{WCAG_2.0}
 
 
 
     Riktlinjerna ska kunna testas på en hemsida oberoende hur hemsidan är uppbyggd.
 
     \subsubsection{Varför WCAG 2.2}
+    WCAG är globalt sett den accepterade webbstandarden och om man kollar på lagar och regler som finns i sverige och EU ser man att det utgår från WCAG.
+    I den svenska myndighetens kriterier för hur webbplatser ska användarvänlighets anpassas finns det direkt länkat till vilket WCAG som kravet utgår ifrån. \parencite{Utförande_av_Dos_lagen}
+
+
+    \subsubsection{Varför är WCAG den globala standarden}
+    Kan bara hitta resurser som säger att det är standarden och inte direkt varför det är standarden
+    Är det bara att skriva att de var dom som först försökte skapa ordning och reda på webben och folk tyckte att deras krav och förslag var vettiga så man bara accepted det som den globala standarden.
 
     \subsection{Lagar}
     I sverige finns en lag som heter "Lagen om tillgänglighet till digital offentlig service (DOS-lagen)".\parencite{Dos-lagen}
-    Lagen ställer krav på offentliga aktörer så att de ska tillgänglighetsanpassa webbplatser och mobila application.
+    Lagen ställer krav på offentliga aktörer så att de ska tillgänglighetsanpassa webbplatser och mobila applikationer.
     Myndigheten för digital förvaltning (Digg) är ansvarig för att genomföra lagen och de utgår från WCAG standarden för att sätta krav på hemsidorna.
 
     \subsubsection{Offentlig aktör}
@@ -94,17 +122,25 @@
     \subsection{Verktyg}
     behöver formulera mitt spreadsheet för att veta vilka verktyg att prata om.
 
+    \subsubsection{WAVE}
+    wave
+
+    \subsubsection{Screen reader}
+    deffenativt inte virus.
+
     \subsection{Komunala Hemsidor}
     För att meddela information om en kommun digital har kommuner hemsidor som det styr innehållet på och lägger upp information om kommunen.
     Det som är intressant om kommunal hemsidor är att alla är inte bara en hemsida som ser lika dan ut för varje kommun utan de ser annorlunda ut men vissa kommuner har hemsidor som ser likadana ut bara varierande innehåll.
     Skillnaden i hur kommunala hemsidor ser ut betyder att det finns en skillnad på hur de är uppbyggda och hur det är anpassade för användarvänlighet för webben.
 
+    \subsubsection{Kalkylark}
 
     
     \section{Metod och Material}
 
     Undersökningen utgick på att testa hur om kommunernas hemsidor uppfyller alla krav i WCAG 2.2.
     Digg och W3C har givit ut en listor över hur kraven kan uppnås i lagen och WCAG 2.2.
+    För specifikation om WCAG kravet se \textcite{WCAG_2.2}
     Undersökningen utgick ifrån en sammanställning över kraven och hur de kan mötas i en tabell (f).
     Utifrån den tabellen testades alla kraven på hemsidorna.
     Nedan fins en förklaring av vad varje colum i tabellen består av.
@@ -118,8 +154,71 @@
     \end{enumerate}
 
     (temp) google spreadsheet https://docs.google.com/spreadsheets/d/1SNX30NQTKxSrTisLqjCoPWqg7aKbZACcXsoCPYrQb6c/edit?usp=sharing
+    Referat så att det ser bra utt är något som jag kommer behöva lista ut.
+    Borde prata om scope med jens.
     \section{Resultat}
-    
+
+    På alla hemsidor så testades inte 16 av de 86 kraven.
+
+    Det finns 3 krav som inte testades för att jag inte hade en bra väg att kunna testa dem.
+    Krav 2.2.5 Re-authenticating (Level AAA) vilket handlar om att användaren loggar in igen efter den har blivit utloggad utan dataförluster.
+   \\ Krav 3.3.4 Error Prevention(Legal, Financial, Data) (Level AA) vilket handlar om förbyggande av fel vid finansiella transaktioner och lagligt bindande kontrakt.
+    Till exempel att informationen ska kollas efter fel när användaren skriver in information för att köpa något.
+  \\  Krav 3.3.6 Error Prevention (All) (Level AAA) vilket är typ samma som 3.3.4 fast det är inte restrikterat till finansiella transaktioner och kontrakt.
+    All information som användaren skickar in ska kollas efter fel och användaren ska kunna åtgärda de felen.
+
+    11 av kraven inom den första kategorin av märkbart testades inte.
+    Kraven handlade om ljud och innehåller saker som att det ska finns undertexter och teckenspråkstolkning för videor och ljud med mera.
+    De testades inte av den enkla anledningen av att jag inte hittade någon ljudfil eller videofil på hemsidan.
+
+    Krav 2.1.4 Character Key Shortcuts (Level A) handlar om tangentbordsgenvägar och testades inte för jag är inte medveten om några tangentbordsgenvägar på hemsidan.
+
+    Krav 2.2.4 Interruptions (Level AAA) handlar om att sidan uppdateras i nutid med ny information.
+    Det kravet testades inte för hemsidan hade inga delar som uppdaterades i nutid.
+
+  \\  I slutändan testades 70 av de 86 kraven på hemsidorna.
+
+
+    I den första delen av WCAG märkbart finns 29 krav var 18 av de kraven testades.
+    Sorsele kommun mötte 10 av de kraven och misslyckades med 8 av dem.
+    Totalt lyckades kommunen med 55.56$\%$ av märkbart kraven.
+    \\Höörs kommun mötte 13 av de kraven och misslyckades med 5 av dem.
+    Totalt lyckades kommunen med 72.22$\%$ av märkbart kraven.
+    \\Linköpings kommun mötte 14 av de kraven och misslyckades med 4 av dem.
+    Totalt lyckades kommunen med 77.78$\%$ av märkbart kraven.
+    \\I den här kategorin ligger sorsele kommun klart lite bakom de andra kommunerna medans linköping och höörs kommun skiljer det endast 1 krav.
+
+
+
+    I den andra delen av WCAG manöverbar finns 34 krav var 31 av de kraven testades.
+    Sorsele kommun mötte 21 av de kraven och misslyckades med 10 av dem.
+    Totalt lyckades kommunen med 67.74$\%$ av manöverbar kraven.
+    \\Höörs kommun mötte 30 av de kraven och misslyckades med 1 av dem.
+    Totalt lyckades kommunen med 96.77$\%$ av manöverbar kraven.
+    \\Linköpings kommun mötte 30 av de kraven och misslyckades med 1 av dem.
+    Totalt lyckades kommunen med 96.77$\%$ av manöverbar kraven.
+    \\Även i den här kategorin ligger sorsele bakom med Linköping och höörs kommun möte lika många krav.
+
+
+    I den tredje delen av WCAG begriplighet finns 21 krav var 19 av de kraven testades.
+    Sorsele kommun mötte 16 av de kraven och misslyckades med 3 av dem.
+    Totalt lyckades kommunen med 84.21$\%$ av begriplighets kraven.
+    \\Höörs kommun mötte 17 av de kraven och misslyckades med 2 av dem.
+    Totalt lyckades kommunen med 89.47$\%$ av begriplighets kraven.
+    \\Linköpings kommun mötte 18 av de kraven och misslyckades med 1 av dem.
+    Totalt lyckades kommunen med 94.73$\%$ av begriplighets kraven.
+    \\Fortsatt är Linköpings kommun högst i antal möta krav med höörs kommun rakt bakom och sorsele kommun i sista plats
+
+
+    Den fjärde och sista delen av WCAG är robust och där finns det bara 2 krav.
+    Sorsele kommun möte 0 krav, Höörs kommun möte 1 krav och linköpings kommun möte 1 krav.
+    Återigen ligger sorsele kommun bakom och Linköping och Höörs kommun gjorde lika.
+
+
+    Totalt lyckades Sorsele kommun möta 47 av kraven och misslyckades med 23 av kraven vilket betyder att de möte 67.14$\%$ av kraven
+    Höörs kommun lyckade möta 61 av kraven och misslyckades med 9 av kraven vilket betyder att de möte 87.14$\%$ av kraven.
+    Linköpings kommun lyckades möta 63 av de 70 kraven och möte 90$\%$ av alla testade krav.
+
     \section{Diskusion}
 
     \section{Referenser}
