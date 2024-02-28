@@ -13,6 +13,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{verbatim}
+\usepackage{hhline}
 %Källor
 \addbibresource{references.bib}
 \graphicspath{ {./images/} }
@@ -22,7 +23,7 @@
 \def\foottitle{Gymnasiearbete}
 \def\name{Levi Högdal}
 
-\title{PMmall \\ \small Gymnasiearbete}
+\title{Gymnasiearbete \\ \small Gymnasiearbete}
 \author{\name}
 \date{\today}
 
@@ -77,17 +78,29 @@
     För att hemsidor ska se vettiga ut och användas av folk med funktionsnedsättningar så görs standarder som man kan följa när man skapar hemsidor och olika lagar.
     Webbstandarden som den här undersökningen kommer hålla sig till är WCAG.
 
-    \subsection{Hyper text markup language}
-    Html står för hyper text markup language och är standardspråket som hemsidor är gjorda av.
-    Html är uppbyggt av element [Förklara element med källa]
-    Programmet wave som används i undersökningen och förklaras senare tillåt att stänga av "STYLE" vilket är css.
+
+    \subsection{Hemsidors uppyggnad}
+    ok
+
+    \subsubsection{Hypertext markup language}
+    Hypertext markup language (HTML) är standardspråket som hemsidor är gjorda av.
+    HTML är språket som ger struktur och definierar grunden till hur hemsidan ser ut \parencite{HTML}
     Om man öppnar en sida och använde wave för att stänga av css så kommer sidan att
     
-    \subsubsection{CSS}
+    \subsubsection{Cascading style sheets}
+    Cascading style sheets (CSS) är ett språk som används för att bestämma hur en hemsida ser ut \parencite{CSS}.
+    CSS
+    Programmet wave som används i undersökningen och förklaras senare tillåter att stänga av "STYLE" vilket är css.
     
-    \subsubsection{ARIA}
+    \subsubsection{Accessible rich internet applications}
+    Accessible rich internet applications (ARIA)
+    
+    \subsection{The world wide web consortum}
+    W3C är det företaget som var utgivarna
 
-    \subsection{WCAG}
+    \subsection{Webb content accessibility guidelines}
+    Webb content accessibility guidelines (WCAG)
+
     WCAG är webbstandarden som skapas av W3C.
     Enligt \textcite{W3C} är W3C ett företag som grundades 1994 av Tim Berners-Lee för att säkerställa webbens utveckling och framtid.
     För att åstadkomma det målet släpper W3C olika standarder och riktlinjer för webben så att alla personer ska kunna använda webben.
@@ -126,14 +139,17 @@
     wave
 
     \subsubsection{Screen reader}
-    deffenativt inte virus.
+    Deffenativt inte virus.
 
     \subsection{Komunala Hemsidor}
     För att meddela information om en kommun digital har kommuner hemsidor som det styr innehållet på och lägger upp information om kommunen.
     Det som är intressant om kommunal hemsidor är att alla är inte bara en hemsida som ser lika dan ut för varje kommun utan de ser annorlunda ut men vissa kommuner har hemsidor som ser likadana ut bara varierande innehåll.
     Skillnaden i hur kommunala hemsidor ser ut betyder att det finns en skillnad på hur de är uppbyggda och hur det är anpassade för användarvänlighet för webben.
+    
+    Hemsidorna i undersökningen valdes från listan på \textcite{SverigesKommuner}.
+    Listan var ordnad i folkmängd störst till mins för alla kommuner i sverige.
 
-    \subsubsection{Kalkylark}
+    \subsection{Kalkylark}
 
     
     \section{Metod och Material}
@@ -178,7 +194,7 @@
 
   \\  I slutändan testades 70 av de 86 kraven på hemsidorna.
 
-
+    \subsection{Märkbart krav}
     I den första delen av WCAG märkbart finns 29 krav var 18 av de kraven testades.
     Sorsele kommun mötte 10 av de kraven och misslyckades med 8 av dem.
     Totalt lyckades kommunen med 55.56$\%$ av märkbart kraven.
@@ -188,8 +204,19 @@
     Totalt lyckades kommunen med 77.78$\%$ av märkbart kraven.
     \\I den här kategorin ligger sorsele kommun klart lite bakom de andra kommunerna medans linköping och höörs kommun skiljer det endast 1 krav.
 
+    \begin{center}
+    Märkbart krav (18 av 29 krav testades)
 
+    \begin{tabular}{ |c|c|c|c|}
+        \hline
+        Kommun & möter & Möter inte & Möter ($\%$) \\  \hline
+        Sorsele & 10 & 8 & 55.64$\%$ \\ \hline
+        Höör & 13 & 5 & 72.22$\%$ \\ \hline
+        Linköping & 14 & 4 & 77.78$\%$ \\ \hline
+    \end{tabular}
+    \end{center}
 
+    \subsection{Mönöverbar krav}
     I den andra delen av WCAG manöverbar finns 34 krav var 31 av de kraven testades.
     Sorsele kommun mötte 21 av de kraven och misslyckades med 10 av dem.
     Totalt lyckades kommunen med 67.74$\%$ av manöverbar kraven.
@@ -199,7 +226,19 @@
     Totalt lyckades kommunen med 96.77$\%$ av manöverbar kraven.
     \\Även i den här kategorin ligger sorsele bakom med Linköping och höörs kommun möte lika många krav.
 
+    \begin{center}
+    Manöverbar krav (31 av 34 krav testades)
 
+    \begin{tabular}{ |c|c|c|c|}
+        \hline
+        Kommun & möter & Möter inte & Möter ($\%$) \\  \hline
+        Sorsele & 21 & 10 & 67.74$\%$ \\ \hline
+        Höör & 30 & 1 & 96.77$\%$ \\ \hline
+        Linköping & 30 & 1 & 96.77$\%$ \\ \hline
+    \end{tabular}
+    \end{center}
+
+    \subsection{Begriplighet krav}
     I den tredje delen av WCAG begriplighet finns 21 krav var 19 av de kraven testades.
     Sorsele kommun mötte 16 av de kraven och misslyckades med 3 av dem.
     Totalt lyckades kommunen med 84.21$\%$ av begriplighets kraven.
@@ -209,15 +248,51 @@
     Totalt lyckades kommunen med 94.73$\%$ av begriplighets kraven.
     \\Fortsatt är Linköpings kommun högst i antal möta krav med höörs kommun rakt bakom och sorsele kommun i sista plats
 
+    \begin{center}
+    Begriplighet krav (19 av 21 krav testades)
 
+    \begin{tabular}{ |c|c|c|c|}
+        \hline
+        Kommun & möter & Möter inte & Möter ($\%$) \\  \hline
+        Sorsele & 16 & 3 & 84.21$\%$ \\ \hline
+        Höör & 17 & 2 & 89.47$\%$ \\ \hline
+        Linköping & 18 & 1 & 94.73$\%$ \\ \hline
+    \end{tabular}
+    \end{center}
+
+    \subsection{Robust krav}
     Den fjärde och sista delen av WCAG är robust och där finns det bara 2 krav.
     Sorsele kommun möte 0 krav, Höörs kommun möte 1 krav och linköpings kommun möte 1 krav.
     Återigen ligger sorsele kommun bakom och Linköping och Höörs kommun gjorde lika.
 
+    \begin{center}
+    Robust krav (2 av 2 krav testades)
 
+    \begin{tabular}{ |c|c|c|c|}
+        \hline
+        Kommun & möter & Möter inte & Möter ($\%$) \\  \hline
+        Sorsele & 0 & 2 & 0$\%$ \\ \hline
+        Höör & 1 & 1 & 50$\%$ \\ \hline
+        Linköping & 1 & 1 & 50$\%$ \\ \hline
+    \end{tabular}
+    \end{center}
+    
+    \subsection{Alla krav}
     Totalt lyckades Sorsele kommun möta 47 av kraven och misslyckades med 23 av kraven vilket betyder att de möte 67.14$\%$ av kraven
     Höörs kommun lyckade möta 61 av kraven och misslyckades med 9 av kraven vilket betyder att de möte 87.14$\%$ av kraven.
     Linköpings kommun lyckades möta 63 av de 70 kraven och möte 90$\%$ av alla testade krav.
+
+    \begin{center}
+    Totalt (70 av 86 krav testades)
+
+    \begin{tabular}{ |c|c|c|c|}
+        \hline
+        Kommun & möter & Möter inte & Möter ($\%$) \\  \hline
+        Sorsele & 47 & 23 & 67.14$\%$ \\ \hline
+        Höör & 61 & 9 & 87.14$\%$ \\ \hline
+        Linköping & 63 & 7 & 90$\%$ \\ \hline
+    \end{tabular}
+    \end{center}
 
     \section{Diskusion}
 
