@@ -11,9 +11,8 @@
 ]{biblatex}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{titlesec}
 \usepackage{hyperref}
-\usepackage{verbatim}
-\usepackage{hhline}
 %Källor
 \addbibresource{references.bib}
 \graphicspath{ {./images/} }
@@ -66,6 +65,7 @@
     \subsection{Syfte och frågeställning}
     Det jag vill undersöka är:
     Vilka WCAG2.2 krav uppfyller kommuners hemsidor och vilka skillnader finns det i kraven som kommunerna uppfyller.
+    Finns det några skillnader på invånare i kommunen och hur många krav kommunen uppfyller. [Kanske]
 
     \section{Bakgrund}
 
@@ -76,16 +76,25 @@
     Tillgänglighet handlar om saker som hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten och har bilder en bildtext, inte kan jag komma åt hemsidan \parencite{webbriktlinjer}.
     Webbsidor design och utformning ska vara anpassad så att alla människor ska kunna använda och förstå hemsidan så länge de kan läsa språket.
     För att hemsidor ska se vettiga ut och användas av folk med funktionsnedsättningar så görs standarder som man kan följa när man skapar hemsidor och olika lagar.
-    Webbstandarden som den här undersökningen kommer hålla sig till är WCAG.
+    Webbstandarden som den här undersökningen kommer hålla sig till är WCAG som är utgivet av W3C.
 
 
     \subsection{Hemsidors uppyggnad}
-    ok
+    Hemsidor brukar vara uppbyggda i grunden av 4 olika delar:
+    \begin{enumerate}
+        \item Hypertext markup language (HTML)
+        \item Cascading style sheets (CSS)
+        \item Accessible rich internet applications (ARIA)
+        \item Javascript/Typescript (JS/TS)
+    \end{enumerate}
+    Den här undersökningen är intresserad i HTML, CSS och ARIA men inte Javascript/Typescript.
+    Javascript och Typescript är programmeringsspråk som används i bakgrunden av hemsidan för att programmera in funktioner som inte redan finns i HTML eller bestämma hur servern hanterar hemsidan på sin sida.
+    WCAG krav handlar mest om användarens upplevelse av hur hemsidan fungerar och inte detaljerna på hur en hemsida fungerar.
 
     \subsubsection{Hypertext markup language}
     Hypertext markup language (HTML) är standardspråket som hemsidor är gjorda av.
-    HTML är språket som ger struktur och definierar grunden till hur hemsidan ser ut \parencite{HTML}
-    Om man öppnar en sida och använde wave för att stänga av css så kommer sidan att
+    HTML är språket som ger struktur och definierar grunden till hur hemsidan ser ut \parencite{HTML}.
+    Språket är uppbyggt av element som har grundfunktioner och grundstilar.
     
     \subsubsection{Cascading style sheets}
     Cascading style sheets (CSS) är ett språk som används för att bestämma hur en hemsida ser ut \parencite{CSS}.
@@ -93,7 +102,9 @@
     Programmet wave som används i undersökningen och förklaras senare tillåter att stänga av "STYLE" vilket är css.
     
     \subsubsection{Accessible rich internet applications}
-    Accessible rich internet applications (ARIA)
+    Accessible rich internet applications (ARIA) är extra roller och attribut som används för att göra en hemsida mer tillgänglig.
+    ARIA har mest funktionalitet om man inte navigerar hemsidan som en normal användare utan med andra hjälpmedel \parencite{ARIA}.
+    Att implementera ARIA på ett felaktigt sätt gör en hemsida mindre användarvänlig och om det går bör man använda HTML element och attribut som gör samma saker.
     
     \subsection{The world wide web consortum}
     W3C är det företaget som var utgivarna
@@ -169,9 +180,6 @@
         \item 3-5 repeterade 2 gånger till för att få plats för 2 hemsidor till.
     \end{enumerate}
 
-    (temp) google spreadsheet https://docs.google.com/spreadsheets/d/1SNX30NQTKxSrTisLqjCoPWqg7aKbZACcXsoCPYrQb6c/edit?usp=sharing
-    Referat så att det ser bra utt är något som jag kommer behöva lista ut.
-    Borde prata om scope med jens.
     \section{Resultat}
 
     På alla hemsidor så testades inte 16 av de 86 kraven.
@@ -299,5 +307,13 @@
     \section{Referenser}
 
     \printbibliography
+
+    cool
+
+    \section{Bilagor}
+    Google spreadsheet:
+    \\ https://docs.google.com/spreadsheets/d/1SNX30NQTKxSrTisLqjCoPWqg7aKbZACcXsoCPYrQb6c/
+    edit?usp=sharing
+
 
 \end{document}
