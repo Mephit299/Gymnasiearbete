@@ -71,6 +71,7 @@
     \section{Bakgrund}
 
     \subsection{Användarbarhet}
+    [förmodligen ta bort]
 
     \subsection{Tillgänglighet}
     Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt något ska vara utom att saker ska kunna användas av alla personer även de med funktionsnedsättning.
@@ -82,12 +83,12 @@
 
     \subsection{Hemsidors uppyggnad}
     Hemsidor brukar vara uppbyggda i grunden av 4 olika delar:
-    \begin{enumerate}
+    \begin{itemize}
         \item Hypertext markup language (HTML)
         \item Cascading style sheets (CSS)
         \item Accessible rich internet applications (ARIA)
         \item Javascript/Typescript (JS/TS)
-    \end{enumerate}
+    \end{itemize}
     Den här undersökningen är intresserad i HTML, CSS och ARIA men inte Javascript/Typescript.
     Javascript och Typescript är programmeringsspråk som används i bakgrunden av hemsidan för att programmera in funktioner som inte redan finns i HTML eller bestämma hur servern hanterar hemsidan på sin sida.
     WCAG krav handlar mest om användarens upplevelse av hur hemsidan fungerar och inte detaljerna på hur en hemsida fungerar.
@@ -95,12 +96,17 @@
     \subsubsection{Hypertext markup language}
     Hypertext markup language (HTML) är standardspråket som hemsidor är gjorda av.
     HTML är språket som ger struktur och definierar grunden till hur hemsidan ser ut \parencite{HTML}.
-    Språket är uppbyggt av element som har grundfunktioner och grundstilar.
-    
+    Ett element är skriven på följande vis <body> och </body>.
+    Den första <body> kallas för en öppnings tagg och är början av elementet och den andra </body> kallas för stängnings tagg och är slutet av elementet.
+    Man kan också skriva mer i en tagg till exempel <article id="article"> där det första ordet är vilket element det är och den andra i det här fallet är ett id som kan användas för att hitta och interagera elementet med exempelvis javascript.
+    En stängnings tag är alltid på följande vis: </p>, </body>, </main>, </head>, </div> och så vidare.
+    Text som inte är i en tagg kommer att hanteras som normalt textinnehåll och skrivas up på hemsidan som normal text.
+    I elementen ingår grundfunktioner och grundstilar som bestämmer hur texten kommer se ut och formateras när den skrivs ut på hemsidan.
+
     \subsubsection{Cascading style sheets}
     Cascading style sheets (CSS) är ett språk som används för att bestämma hur en hemsida ser ut \parencite{CSS}.
-    CSS
-    Programmet wave som används i undersökningen och förklaras senare tillåter att stänga av "STYLE" vilket är css.
+    CSS tillåter att ändra grundstilen på ett element till något annat.
+    Programmet WAVE som används i undersökningen och förklaras senare tillåter att stänga av "STYLE" vilket är css.
     
     \subsubsection{Accessible rich internet applications}
     Accessible rich internet applications (ARIA) är extra roller och attribut som används för att göra en hemsida mer tillgänglig.
@@ -145,13 +151,21 @@
 
 
     \subsection{Verktyg}
-    behöver formulera mitt spreadsheet för att veta vilka verktyg att prata om.
+    För att underlätta min undersökning användes 2 digitala verktyg.
+    Det första heter web accessibility evaluation tools (WAVE).
+    WAVE är en webbtillägg och hemsida som tillåter automatiskt testning för några WCAG krav \parencite{WAVE}.
+    WAVE kollar kontrasten på innehållet, redovisar HTML strukturen och vart ARIA används på hemsidan.
+    Fell i HTML syntax redovisas enkelt och ikoner på hemsidan visas var olika element och attribut används.
 
-    \subsubsection{WAVE}
-    wave
+    \includegraphics[width=0.4\textwidth]{../images/WAVE.png}
 
-    \subsubsection{Screen reader}
-    Deffenativt inte virus.
+    WAVE resultatet från sorsele kommun startsida.
+
+    Det andra verktyget är en screen reader.
+    En screen reader läser upp ett html element och dess textinnehåll.
+    Det finns WCAG krav där användaren programmässigt sätt ska kunna bestämma vad något är och vad det har för funktion.
+    Till exempel finns WCAG krav 1.3.5 Identify Input Purpose (Level AA) där användaren ska kunna bestämma vilken information ett textinmatningsfält ska få in.
+    Med en screen reader ska den berätta för användaren att det är ett textinmatningsfält och vilken information som ska in.
 
     \subsection{Komunala Hemsidor}
     För att meddela information om en kommun digital har kommuner hemsidor som det styr innehållet på och lägger upp information om kommunen.
@@ -168,8 +182,8 @@
 
     Undersökningen utgick på att testa hur om kommunernas hemsidor uppfyller alla krav i WCAG 2.2.
     Digg och W3C har givit ut en listor över hur kraven kan uppnås i lagen och WCAG 2.2.
-    För specifikation om WCAG kravet se \textcite{WCAG_2.2}
-    Undersökningen utgick ifrån en sammanställning över kraven och hur de kan mötas i en tabell (f).
+    För specifikation om WCAG kraven se \textcite{WCAG_2.2}
+    Undersökningen utgick ifrån en sammanställning över kraven och hur de kan mötas i ett kalkylark (se bilaga 1).
     Utifrån den tabellen testades alla kraven på hemsidorna.
     Nedan fins en förklaring av vad varje colum i tabellen består av.
     \begin{enumerate}
@@ -312,6 +326,7 @@
     cool
 
     \section{Bilagor}
+    Bilaga 1
     Google spreadsheet:
     \\ https://docs.google.com/spreadsheets/d/1SNX30NQTKxSrTisLqjCoPWqg7aKbZACcXsoCPYrQb6c/
     edit?usp=sharing
