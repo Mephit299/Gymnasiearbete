@@ -70,9 +70,6 @@
 
     \section{Bakgrund}
 
-    \subsection{Användarbarhet}
-    [förmodligen ta bort]
-
     \subsection{Tillgänglighet}
     Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt något ska vara utom att saker ska kunna användas av alla personer även de med funktionsnedsättning.
     Tillgänglighet handlar om saker som hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten och har bilder en bildtext, inte kan jag komma åt hemsidan \parencite{webbriktlinjer}.
@@ -105,37 +102,63 @@
 
     \subsubsection{Cascading style sheets}
     Cascading style sheets (CSS) är ett språk som används för att bestämma hur en hemsida ser ut \parencite{CSS}.
+    Grundstilarna i HTML gör en hemsida som fungerar, inte en som ser bra ut.
+    De estetiska
+
     CSS tillåter att ändra grundstilen på ett element till något annat.
+    För att bestämma hur en hemsida ser ut grafiskt används CSS x
+
     Programmet WAVE som används i undersökningen och förklaras senare tillåter att stänga av "STYLE" vilket är css.
-    
+
     \subsubsection{Accessible rich internet applications}
     Accessible rich internet applications (ARIA) är extra roller och attribut som används för att göra en hemsida mer tillgänglig.
     ARIA har mest funktionalitet om man inte navigerar hemsidan som en normal användare utan med andra hjälpmedel \parencite{ARIA}.
     Att implementera ARIA på ett felaktigt sätt gör en hemsida mindre användarvänlig och om det går bör man använda HTML element och attribut som gör samma saker.
     
-    \subsection{The world wide web consortum}
-    W3C är det företaget som var utgivarna
+    \subsection{The world wide web consortium}
+    The world wide web consortium (W3C) är det företaget som var utgivarna WCAG 2.2 standarden som användes i undersökningen \parencite{W3C}.
+    W3C är ett företag som grundades av Tim Berners-Lee med syftet att säkerställa webbens utveckling och framtid.
+    För att uppnå målet har de skapa standarder för webben och har diskussioner med flertal grupper och organisationer om webben.
+    WCAG standarden har de skapat och det är den som undersökningen kommer att utgå ifrån.
 
-    \subsection{Webb content accessibility guidelines}
-    Webb content accessibility guidelines (WCAG)
+    \subsection{Web content accessibility guidelines}
+    Web content accessibility guidelines (WCAG) är en lista av riktlinjer för webben \parencite{WCAG_2.2}.
+    Målet med riktlinjerna är att göra webben mer tillgänglig och användarvänlig så att alla användare kan använda hemsidan.
+    WCAG 2.2 är indelad i 4 stora kategorier och varje individuellt krav ska kunna testas separat.
+    \\De olika delarna är:
+    \begin{enumerate}
+        \item Märkbart
+        \item Manöverbart
+        \item Begriplighet
+        \item Robust
+    \end{enumerate}
 
-    WCAG är webbstandarden som skapas av W3C.
-    Enligt \textcite{W3C} är W3C ett företag som grundades 1994 av Tim Berners-Lee för att säkerställa webbens utveckling och framtid.
-    För att åstadkomma det målet släpper W3C olika standarder och riktlinjer för webben så att alla personer ska kunna använda webben.
-    WCAG är en samling av olika rekommendationer som alla ska kunna testas separat och inte riktas mot någon specific teknologi utan webben skännerält. \parencite{WCAG_2.0}
+    Märkbart handlar om att information och innehåll ska vara synligt och tillgängligt för användare.
+    Ljudbaserad media ska vara tillgängligt för användare som är döva.
+    Den visuella presentationen av hemsidan ska vara läsbar och enkel att förstå.
 
+    Manöverbart handlar att hemsidan ska vara navigerbar på ett användarvänligt vis.
+    Det finns flera vägar än bara mus och tangentbord att navigera en hemsida och de behöver också fungera.
+    Hemsidor ska till exempel vara navigerbar med pekskärmar och endast tangent.
 
+    Begriplighet handlar om att användaren ska förstå innehållet på hemsidan.
+    Att förstå innehållet på en hemsida är inte alltid det lättaste och det är ännu svårare om användaren har en funktionsnedsättning.
+    Navigationen och språket på hemsidan ska vara tydligt och eventual fel som användaren gör ska förklaras.
 
-    Riktlinjerna ska kunna testas på en hemsida oberoende hur hemsidan är uppbyggd.
+    Robust relaterar till att olika program ska kunna bestämma vad innehåll betyder och gör.
+    Semantisk mening i de olika elementen är viktiga för att program ska kunna tolka hemsidan på ett bra sätt.
 
     \subsubsection{Varför WCAG 2.2}
     WCAG är globalt sett den accepterade webbstandarden och om man kollar på lagar och regler som finns i sverige och EU ser man att det utgår från WCAG.
     I den svenska myndighetens kriterier för hur webbplatser ska användarvänlighets anpassas finns det direkt länkat till vilket WCAG som kravet utgår ifrån. \parencite{Utförande_av_Dos_lagen}
+    Den här undersökningen utgår ifrån WCAG 2.2 vilket var den senaste version av WCAG standarden när undersökningen gjordes.
 
 
     \subsubsection{Varför är WCAG den globala standarden}
     Kan bara hitta resurser som säger att det är standarden och inte direkt varför det är standarden
     Är det bara att skriva att de var dom som först försökte skapa ordning och reda på webben och folk tyckte att deras krav och förslag var vettiga så man bara accepted det som den globala standarden.
+
+    [förmodligen borde förklaras med W3C]
 
     \subsection{Lagar}
     I sverige finns en lag som heter "Lagen om tillgänglighet till digital offentlig service (DOS-lagen)".\parencite{Dos-lagen}
@@ -174,9 +197,6 @@
     
     Hemsidorna i undersökningen valdes från listan på \textcite{SverigesKommuner}.
     Listan var ordnad i folkmängd störst till mins för alla kommuner i sverige.
-
-    \subsection{Kalkylark}
-
     
     \section{Metod och Material}
 
