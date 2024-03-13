@@ -60,22 +60,27 @@
     Att förstå internet och kunna enkelt läsa och navigera olika forum och hemsidor är inte något som personer som har använt internet har problem med.
     Det finns många olika sätt som en hemsida kan se utt men hur ska hemsidor anpassas för folk som har svårt att använda internet.
     Om man har någon funktionsnedsättning eller om det är väldigt dålig kontrast på en hemsida så blir den svår att använda.
-    För att underlätta så att allt inte är kaos och användaren ska kunna använda hemsidan på ett bra sätt har en organisation som heter W3C skapat standarder(WCAG) för användarvänlighet och tillgänglighet på hemsidor.
+    För att underlätta utvecklingen av användarvänliga hemsidor har en organisation som heter W3C skapat standarder(WCAG) för användarvänlighet och tillgänglighet
     Hur mycket hemsidor förhåller sig till WCAG standarden är varierande men jag är intresserad av hur olika kommunala hemsidor förhåller sig till dem och vilka olika delar av WCAG 2.2 standarden de möter.
     
     \subsection{Syfte och frågeställning}
     Det jag vill undersöka är:
     Vilka WCAG 2.2 krav uppfyller kommuners hemsidor och vilka skillnader finns det i kraven som kommunerna uppfyller.
-    Finns det några skillnader på invånare i kommunen och hur många krav kommunen uppfyller.
+    Finns det några skillnader på antalet invånare i kommunen och hur många krav kommunen uppfyller.
 
     \section{Bakgrund}
 
     \subsection{Tillgänglighet}
     Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt något ska vara utom att hemsidan ska vara användbar för alla användare, även de med funktionsnedsättning.
-    Tillgänglighet handlar om saker som hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten och har bilder en bildtext, inte kan jag komma åt hemsidan \parencite{webbriktlinjer}.
-    Webbsidor design och utformning ska vara anpassad så att alla människor ska kunna använda och förstå hemsidan så länge de kan läsa språket.
-    För att hemsidor ska se vettiga ut och användas av folk med funktionsnedsättningar så görs standarder som man kan följa när man skapar hemsidor och olika lagar.
-    Webbstandarden som den här undersökningen kommer att hålla sig till är WCAG som är utgivet av W3C.
+    Tillgänglighet handlar om hur enkelt användaren kan fösta hemsidan \parencite{webbriktlinjer}.
+    Det innehåller bland annat:
+    Hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten.
+    Har bilder en bildtext?
+    Blinkar hemsidan för mycket?
+    \\Inte kan jag komma åt hemsidan.
+    \\Webbsidor design och utformning ska vara anpassad så att alla människor ska kunna använda och förstå hemsidan så länge de kan läsa språket.
+    För att hemsidor ska kunna användas av folk med funktionsnedsättningar så görs standarder som man kan följa när man skapar hemsidor och olika lagar.
+    Webbstandarden som den här undersökningen åtgår från är WCAG som är utgivet av W3C.
 
 
     \subsection{Hemsidors uppyggnad}
@@ -87,10 +92,10 @@
         \item Javascript/Typescript (JS/TS)
     \end{itemize}
     Den här undersökningen är intresserad i HTML, CSS och ARIA men inte Javascript/Typescript.
-    Javascript och Typescript är programmeringsspråk som används i bakgrunden av hemsidan för att programmera in funktioner som inte redan finns i HTML eller bestämma hur servern hanterar hemsidan.
-    WCAG krav handlar mest om användarens upplevelse av hur hemsidan fungerar och inte detaljerna på hur en hemsida fungerar.
+    Javascript och Typescript är inte relevant till undersökningen.
 
     \subsubsection{Hypertext markup language}
+    % Du har feedback. Skriv om. %
     Hypertext markup language (HTML) är standardspråket som hemsidor är gjorda av.
     HTML är språket som ger struktur och definierar grunden till hur hemsidan ser ut \parencite{HTML}.
     Ett element är skriven på följande vis <body> och </body>.
@@ -103,8 +108,8 @@
 
     \subsubsection{Cascading style sheets}
     Cascading style sheets (CSS) är ett språk som används för att bestämma hur en hemsida ser ut \parencite{CSS}.
-    Grundstilarna i HTML gör en hemsida som fungerar, inte en som ser bra ut vilket är varför CSS används.
-    Nästan alla estetiska delar på en hemsida sköts av CSS.
+    Grundstilarna i HTML gör en hemsida som fungerar men den kommer inte nödvändigtvis se ut som utgivaren av sidan vill.
+    För att justera hur en hemsida ser ut och bestämma des design används CSS.
 
     \subsubsection{Accessible rich internet applications}
     Accessible rich internet applications (ARIA) är extra roller och attribut som används för att göra en hemsida mer tillgänglig.
@@ -112,7 +117,7 @@
     Att implementera ARIA på ett felaktigt sätt gör en hemsida mindre användarvänlig och om det går bör man använda HTML element och attribut om det uppfyller samma funktion.
     
     \subsection{The world wide web consortium}
-    The world wide web consortium (W3C) är det företaget som var utgivarna WCAG 2.2 standarden som användes i undersökningen \parencite{W3C}.
+    The world wide web consortium (W3C) är det företaget som är utgivarna WCAG 2.2 standarden \parencite{W3C}.
     W3C är ett företag som grundades av Tim Berners-Lee med syftet att säkerställa webbens utveckling och framtid.
     För att uppnå målet har de skapa standarder för webben och har diskussioner med flertal grupper och organisationer om webben.
     WCAG standarden har de skapat och det är den som undersökningen kommer att utgå ifrån.
@@ -156,20 +161,25 @@
     Myndigheten för digital förvaltning (Digg) är ansvarig för att genomföra lagen och de utgår från WCAG standarden för att sätta krav på hemsidorna \parencite{Utförande_av_Dos_lagen}.
 
     \subsubsection{Offentlig aktör}
-    Hur en offentlig aktör definieras finns förklarat i Dos-lagen \parencite{Dos-lagen} och av DIGG \parencite{Om_Dos-lage} men det kan enklare förklaras som offentlig information från staten som statliga och kommunala myndigheter samt sammanslutningar till dem.
+    Hur en offentlig aktör definieras finns förklarat i Dos-lagen \parencite{Dos-lagen} och av DIGG \parencite{Om_Dos-lagen} men det kan enklare förklaras som offentlig information från staten som statliga och kommunala myndigheter samt sammanslutningar till dem.
     Information som handlar om utbildning, skola, sjukvård ock omsorg måste också följa lagen.
     Även om det ägs privat så kommer de behöva följa kraven från Dos-lagen.
 
     \subsection{Verktyg}
-    För att underlätta min undersökning användes 2 digitala verktyg.
+    För att underlätta undersökningen användes 2 digitala verktyg.
     Det första heter web accessibility evaluation tools (WAVE).
     WAVE är en webb tillägg och hemsida som tillåter automatiskt testning för några WCAG krav \parencite{WAVE}.
     WAVE kollar kontrasten på innehållet, redovisar HTML strukturen och vart ARIA används på hemsidan.
     Fell i HTML syntax redovisas enkelt och ikoner på hemsidan visas var olika element och attribut används.
 
+    \begin{center}
+
     \includegraphics[width=0.4\textwidth]{../images/WAVE.png}
 
     WAVE resultatet från Sorsele kommuns startsida.
+    \end{center}
+
+    \subsubsection{Screen reader}
 
     Det andra verktyget är en screen reader.
     En screen reader läser upp ett html element och dess textinnehåll.
@@ -179,11 +189,12 @@
 
     \subsection{Komunala Hemsidor}
     För att meddela information om en kommun digitalt har kommuner hemsidor som det styr innehållet på och lägger upp information om kommunen.
-    Det som är intressant om kommunal hemsidor är att alla är inte bara en hemsida som ser likadan ut för varje kommun utan de ser annorlunda ut men vissa kommuner har hemsidor som ser likadana ut bara varierande innehåll.
+    Det som är intressant om kommunal hemsidor är att alla är inte bara en hemsida som ser likadan ut för varje kommun utan de flesta ser annorlunda.
+    Vissa kommuner har hemsidor som ser likadana ut bara varierande innehåll.
     Skillnaden i hur kommunala hemsidor ser ut betyder att det finns en skillnad på hur de är uppbyggda och hur det är anpassade för användarvänlighet för webben.
     
     Hemsidorna i undersökningen valdes från listan på \textcite{SverigesKommuner}.
-    Listan var ordnad i folkmängd, störst till minst för alla kommuner i Sverige.
+    Listan är ordnad i folkmängd, störst till minst för alla kommuner i Sverige.
     Till undersökningen valdes en hemsida som var bland de högst upp på listan, en i mitten av listen och en längst ner på listan.
     Det valda kommunerna blev \textcite{Linköpings_kommun} (störst), \textcite{Höörs_kommun} (i mitten) och \textcite{Sorsele_kommun} (minst).
     
@@ -192,16 +203,22 @@
     Undersökningen utgick på att testa hur kommunernas hemsidor uppfyller alla krav i WCAG 2.2.
     Digg och W3C har givit ut en listor över hur kraven kan uppnås i lagen och WCAG 2.2.
     För specifikation om WCAG kraven se \textcite{WCAG_2.2}
-    Undersökningen utgick från en sammanställning över kraven och hur de kan mötas i ett kalkylark (se bilaga 1).
+    Undersökningen utgick från en sammanställning över WCAG 2.2 kraven och hur de kan mötas.
+    Den sammanställningen och resultatet finns i ett kalkylark (se bilaga 1).
     Utifrån tabellen testades alla kraven på hemsidorna.
-    Nedan finns en förklaring av vad varje colum i tabellen består av.
+    Nedan finns en förklaring av vad varje colum i kalkylarket består av.
     \begin{enumerate}
         \item Själva WCAG 2.2 kravet som skulle testas.
         \item Hur WCAG 2.2 kravet ska testas
         \item På vilken hemsida som kravet testades
         \item Om hemsidan uppfyllde kravet
         \item Kommentarer om hemsidan
-        \item 3-5 repeterade 2 gånger till för att få plats för 2 hemsidor till.
+        \item På vilken hemsida som kravet testades
+        \item Om hemsidan uppfyllde kravet
+        \item Kommentarer om hemsidan
+        \item På vilken hemsida som kravet testades
+        \item Om hemsidan uppfyllde kravet
+        \item Kommentarer om hemsidan
     \end{enumerate}
 
     \section{Resultat}
@@ -225,19 +242,19 @@
     Det kravet testades inte för hemsidan hade inga delar som uppdaterades i nutid.
 
   \\  I slutändan testades 70 av de 86 kraven på hemsidorna.
-
+    %Kanske det lättaste är att bara ha en tabbel och sen utgå från den tabbelen.%
     \subsection{Märkbart krav}
-    I den första delen av WCAG märkbart finns 29 krav var 18 av de kraven testades.
-    Sorsele kommun mötte 10 av de kraven och misslyckades med 8 av dem.
+    I den första delen av WCAG märkbart finns 29 krav var 18 av de testades.
+    Sorsele kommun mötte 10 och misslyckades med 8 av dem.
     Totalt lyckades kommunen med 55.56$\%$ av märkbart kraven.
-    \\Höörs kommun mötte 13 av de kraven och misslyckades med 5 av dem.
+    \\Höörs kommun mötte 13 och misslyckades med 5 av dem.
     Totalt lyckades kommunen med 72.22$\%$ av märkbart kraven.
-    \\Linköpings kommun mötte 14 av de kraven och misslyckades med 4 av dem.
+    \\Linköpings kommun mötte 14 och misslyckades med 4 av dem.
     Totalt lyckades kommunen med 77.78$\%$ av märkbart kraven.
     \\I den här kategorin ligger Sorsele kommun klart lite bakom de andra kommunerna medans Linköping och Höörs kommun skiljer det endast 1 krav.
 
     \begin{center}
-    Märkbart krav (18 av 29 krav testades)
+    Märkbart (18 av 29 krav testades)
 
     \begin{tabular}{ |c|c|c|c|}
         \hline
@@ -249,17 +266,17 @@
     \end{center}
 
     \subsection{Manöverbart krav}
-    I den andra delen av WCAG manöverbart finns 34 krav var 31 av de kraven testades.
-    Sorsele kommun mötte 21 av de kraven och misslyckades med 10 av dem.
+    I den andra delen av WCAG manöverbart finns 34 krav var 31 av de testades.
+    Sorsele kommun mötte 21 och misslyckades med 10 av dem.
     Totalt lyckades kommunen med 67.74$\%$ av manöverbar kraven.
-    \\Höörs kommun mötte 30 av de kraven och misslyckades med 1 av dem.
+    \\Höörs kommun mötte 30 och misslyckades med 1 av dem.
     Totalt lyckades kommunen med 96.77$\%$ av manöverbar kraven.
-    \\Linköpings kommun mötte 30 av de kraven och misslyckades med 1 av dem.
+    \\Linköpings kommun mötte 30 och misslyckades med 1 av dem.
     Totalt lyckades kommunen med 96.77$\%$ av manöverbar kraven.
     \\Även i den här kategorin ligger Sorsele bakom med Linköping och Höörs kommun möte lika många krav.
 
     \begin{center}
-    Manöverbar krav (31 av 34 krav testades)
+    Manöverbar (31 av 34 krav testades)
 
     \begin{tabular}{ |c|c|c|c|}
         \hline
@@ -271,17 +288,17 @@
     \end{center}
 
     \subsection{Begriplighet krav}
-    I den tredje delen av WCAG begriplighet finns 21 krav var 19 av de kraven testades.
-    Sorsele kommun mötte 16 av de kraven och misslyckades med 3 av dem.
+    I den tredje delen av WCAG begriplighet finns 21 krav var 19 av de testades.
+    Sorsele kommun mötte 16 och misslyckades med 3 av dem.
     Totalt lyckades kommunen med 84.21$\%$ av begriplighets kraven.
-    \\Höörs kommun mötte 17 av de kraven och misslyckades med 2 av dem.
+    \\Höörs kommun mötte 17 och misslyckades med 2 av dem.
     Totalt lyckades kommunen med 89.47$\%$ av begriplighets kraven.
-    \\Linköpings kommun mötte 18 av de kraven och misslyckades med 1 av dem.
+    \\Linköpings kommun mötte 18 och misslyckades med 1 av dem.
     Totalt lyckades kommunen med 94.73$\%$ av begriplighets kraven.
     \\Fortsatt är Linköpings kommun högst i antal möta krav med Höörs kommun rakt bakom och Sorsele kommun i sista plats
 
     \begin{center}
-    Begriplighet krav (19 av 21 krav testades)
+    Begriplighet (19 av 21 krav testades)
 
     \begin{tabular}{ |c|c|c|c|}
         \hline
@@ -293,12 +310,14 @@
     \end{center}
 
     \subsection{Robust krav}
-    Den fjärde och sista delen av WCAG är robust och där finns det bara 2 krav.
-    Sorsele kommun mötte 0 krav, Höörs kommun mötte 1 krav och linköpings kommun mötte 1 krav.
+    Den fjärde och sista delen av WCAG är robust och där finns det bara 2 krav där båda testades.
+    Sorsele kommun mötte 0 krav.
+    Höörs kommun mötte 1 krav
+    Linköpings kommun mötte 1 krav.
     Återigen ligger sorsele kommun bakom och Linköping och Höörs kommun gjorde lika.
 
     \begin{center}
-    Robust krav (2 av 2 krav testades)
+    Robust (2 av 2 krav testades)
 
     \begin{tabular}{ |c|c|c|c|}
         \hline
@@ -329,27 +348,28 @@
     \section{Diskussion}
     Resultatet av Linköping kommun och Höörs kommun är väldigt lika.
     Det skiljer endast två krav mellan deras resultat.
-    Linköping kommun möter tre krav som Höörs kommun inte gör och Höörs kommun ett krav som Linköpings kommun inte möter.
+    Linköping möter tre krav som Höörs inte gör och Höörs ett krav som Linköpings inte möter.
     Det är inte en så stor skillnad i antal möta krav som kanske skulle se likadan ut om andra kommuner valdes.
     Jag tycker att det inte kan dras någon slutsats från den skillnaden utan jag skulle behöva testa mer hemsidor för att dra en slutsats.
 
     Den riktigt intressanta delen är Sorsele kommun som möter 14 mindre krav än Höörs kommun.
-    Det är väldigt drastisk skillnad jämfört med den tidigare jämförelsen.
-    Sorsele kommun klarar mindre krav i alla kategorier men det är mest krav i manöverbar kategorin.
+    Det är en drastisk skillnad jämfört med Höör och Linköping.
+    Sorsele kommun klarar mindre krav i alla kategorier men det är mest i manöverbar kategorin.
     Väldigt många av de misslyckande kraven relaterar till att användaren kan använda tab knappen på tangentbordet för att komma åt ett sökfält som inte visas.
+    %Gör något åt det här%
     Det här är väldigt subjektivt men känslan jag fick av Sorsele kommun var att den blev skapad och sen hade blivit uppdaterad ett flertal gånger av olika personer.
     Att skapa en hemsida och sen uppdatera den flera gånger av olika företag med nya funktioner och efter nya regler kostar förmodligen mindre än att skapa en ny hemsida men hemsidan kommer förmodligen att behålla några av de dåliga delarna före uppdateringen.
     Det är en kommun med liten befolkning så att uppdatera en sida är förmodligen mer logiskt med tanken på kommunens lägre inkomster än resten.
     Jag fick inte den känslan av Linköpings eller Höörs kommun hemsida.
 
-    För att resultatet ska vissa något om kommuner generellt skulle mer kommuner behöva undersökas.
+    För att resultatet ska vissa något om kommuner generellt skulle fler kommuner undersökas.
     Att undersöka fler kommuner är också en väg att förbättra undersökningen och förstärka resultatet.
     Det går också att fördjupa sig mer i individuella WCAG krav och kontrollera dem mer noggrant.
     \textcite{WCAG_2.2} innehåller för varje krav länkar med extra förklaring av innebörden av kravet och förslag på olika väga att testa krav.
 
     \section{Referenser}
 
-    \printbibliography
+    \printbibliography[heading=none]
 
     \section{Bilagor}
     Bilaga 1
