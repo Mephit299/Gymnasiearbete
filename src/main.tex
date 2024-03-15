@@ -3,7 +3,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{fancyheadings}
-\usepackage[swedish,english]{babel}
+\usepackage[swedish, english]{babel}
 \usepackage[
     backend=biber,
     style=authoryear-ibid,
@@ -26,7 +26,9 @@
 \author{\name}
 \date{\today}
 
+
 \begin{document}
+
 
 % fixar sidfot
     \lfoot{\footnotesize{\name \\ \email}}
@@ -41,16 +43,19 @@
     \setlength{\parindent}{0pt}
 % men däremot lite mellanrum
     \setlength{\parskip}{10pt}
-
+    \begin{otherlanguage}{swedish}
     \maketitle
     \begin{center}
     \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
     \end{center}
-
+    \end{otherlanguage}
     \newpage
+    \begin{otherlanguage}{english}
     \begin{abstract}
         abstract
     \end{abstract}
+    \end{otherlanguage}
+    \begin{otherlanguage}{swedish}
     \newpage
     \tableofcontents
     \newpage
@@ -59,12 +64,13 @@
     Att kunna använda en hemsida på ett bra sätt är något många nuförtiden tar för givet.
     Att förstå internet och kunna enkelt läsa och navigera olika forum och hemsidor är inte något som personer som har använt internet har problem med.
     Det finns många olika sätt som en hemsida kan se utt men hur ska hemsidor anpassas för folk som har svårt att använda internet.
-    Om man har någon funktionsnedsättning eller om det är väldigt dålig kontrast på en hemsida så blir den svår att använda.
-    För att underlätta utvecklingen av användarvänliga hemsidor har en organisation som heter W3C skapat standarder(WCAG) för användarvänlighet och tillgänglighet
-    Hur mycket hemsidor förhåller sig till WCAG standarden är varierande men jag är intresserad av hur olika kommunala hemsidor förhåller sig till dem och vilka olika delar av WCAG 2.2 standarden de möter.
+    Om användaren har någon funktionsnedsättning så kan hemsidan bli väldigt svår att använda och tolka om den inte är anpassad för deras användning.
+    För att underlätta utvecklingen av användarvänliga hemsidor har en organisation som heter W3C skapat standarder(WCAG) för användarvänlighet och tillgänglighet.å
+
     
     \subsection{Syfte och frågeställning}
-    Det jag vill undersöka är:
+    Hur mycket hemsidor förhåller sig till WCAG standarden är varierande men jag är intresserad av hur olika kommunala hemsidor förhåller sig till dem och vilka olika delar av WCAG 2.2 standarden de möter.
+    \\Det jag vill undersöka är:
     Vilka WCAG 2.2 krav uppfyller kommuners hemsidor och vilka skillnader finns det i kraven som kommunerna uppfyller.
     Finns det några skillnader på antalet invånare i kommunen och hur många krav kommunen uppfyller.
 
@@ -80,7 +86,7 @@
     \\Inte kan jag komma åt hemsidan.
     \\Webbsidor design och utformning ska vara anpassad så att alla människor ska kunna använda och förstå hemsidan så länge de kan läsa språket.
     För att hemsidor ska kunna användas av folk med funktionsnedsättningar så görs standarder som man kan följa när man skapar hemsidor och olika lagar.
-    Webbstandarden som den här undersökningen åtgår från är WCAG som är utgivet av W3C.
+    Webbstandarden som den här undersökningen utgår från är WCAG som är utgivet av W3C.
 
 
     \subsection{Hemsidors uppyggnad}
@@ -92,19 +98,22 @@
         \item Javascript/Typescript (JS/TS)
     \end{itemize}
     Den här undersökningen är intresserad i HTML, CSS och ARIA men inte Javascript/Typescript.
-    Javascript och Typescript är inte relevant till undersökningen.
+    Javascript och Typescript är inte relevant till den här undersökningen.
 
     \subsubsection{Hypertext markup language}
     % Du har feedback. Skriv om. %
     Hypertext markup language (HTML) är standardspråket som hemsidor är gjorda av.
     HTML är språket som ger struktur och definierar grunden till hur hemsidan ser ut \parencite{HTML}.
     Ett element är skriven på följande vis <body> och </body>.
-    Den första <body> kallas för en öppnings tagg och är början av elementet och den andra </body> kallas för stängnings tagg och är slutet av elementet.
-    Man kan också skriva mer i en tagg till exempel <article id="article"> där det första ordet är vilket element det är och den andra i det här fallet är ett id som kan användas för att hitta och interagera elementet med exempelvis javascript.
-    En stängnings tag är alltid på följande vis: </p>, </body>, </main>, </head>, </div> och så vidare.
-    Text som inte är i en tagg kommer att hanteras som normalt textinnehåll och skrivas upp på hemsidan som normal text.
-    Om texten skrivs mellan en öppnings tag och stängnings tagg kommer texten bli påverkan av elementets funktioner och stilar.
+    Text skriven utanför ett element förlorar all semantisk mening och kommer att skrivas ut på hemsidan som normal text.
+    Om den istället skrivs mellan början och slutet av ett element kommer att bli påverkad av elementets funktioner och stilar.
     Det gör att texten automatiskt formateras efter elementet och program kan förstå innehållet.
+
+    %Text som inte är i en tagg kommer att hanteras som normalt textinnehåll och skrivas upp på hemsidan som normal text.
+    %Om texten skrivs mellan en öppnings tag och stängnings tagg kommer texten bli påverkan av elementets funktioner och stilar.
+    %Den första <body> kallas för en öppnings tagg och är början av elementet och den andra </body> kallas för stängnings tagg och är slutet av elementet.
+    %Man kan också skriva mer i en tagg till exempel <article id="article"> där det första ordet är vilket element det är och den andra i det här fallet är ett id som kan användas för att hitta och interagera elementet med exempelvis javascript.
+    %En stängnings tag är alltid på följande vis: </p>, </body>, </main>, </head>, </div> och så vidare.
 
     \subsubsection{Cascading style sheets}
     Cascading style sheets (CSS) är ett språk som används för att bestämma hur en hemsida ser ut \parencite{CSS}.
@@ -165,7 +174,7 @@
     Information som handlar om utbildning, skola, sjukvård ock omsorg måste också följa lagen.
     Även om det ägs privat så kommer de behöva följa kraven från Dos-lagen.
 
-    \subsection{Verktyg}
+    \subsection{Digitala verktyg}
     För att underlätta undersökningen användes 2 digitala verktyg.
     Det första heter web accessibility evaluation tools (WAVE).
     WAVE är en webb tillägg och hemsida som tillåter automatiskt testning för några WCAG krav \parencite{WAVE}.
@@ -189,7 +198,7 @@
 
     \subsection{Komunala Hemsidor}
     För att meddela information om en kommun digitalt har kommuner hemsidor som det styr innehållet på och lägger upp information om kommunen.
-    Det som är intressant om kommunal hemsidor är att alla är inte bara en hemsida som ser likadan ut för varje kommun utan de flesta ser annorlunda.
+    Det som är intressant om kommunal hemsidor är att alla hemsidor inte ser likadan ut utan de flesta ser annorlunda.
     Vissa kommuner har hemsidor som ser likadana ut bara varierande innehåll.
     Skillnaden i hur kommunala hemsidor ser ut betyder att det finns en skillnad på hur de är uppbyggda och hur det är anpassade för användarvänlighet för webben.
     
@@ -314,7 +323,6 @@
     Sorsele kommun mötte 0 krav.
     Höörs kommun mötte 1 krav
     Linköpings kommun mötte 1 krav.
-    Återigen ligger sorsele kommun bakom och Linköping och Höörs kommun gjorde lika.
 
     \begin{center}
     Robust (2 av 2 krav testades)
@@ -329,8 +337,8 @@
     \end{center}
     
     \subsection{Alla krav}
-    Totalt lyckades Sorsele kommun möta 47 av kraven och misslyckades med 23 av kraven vilket betyder att de mötte 67.14$\%$ av kraven
-    Höörs kommun lyckades möta 61 av kraven och misslyckades med 9 av kraven vilket betyder att de mötte 87.14$\%$ av kraven.
+    Totalt lyckades Sorsele kommun möta 47 av kraven och misslyckades med 23 av dem vilket betyder att de mötte totalt 67.14$\%$ av kraven.
+    Höörs kommun lyckades möta 61 av kraven och misslyckades med 9 av dem vilket betyder att de mötte total 87.14$\%$ av dem.
     Linköpings kommun lyckades möta 63 av de 70 kraven och mötte 90$\%$ av alla testade krav.
 
     \begin{center}
@@ -338,7 +346,7 @@
 
     \begin{tabular}{ |c|c|c|c|}
         \hline
-        Kommun & Möter & Möter inte & Möter ($\%$) \\  \hline
+        Kommun & Möter & Möter inte & Möter $\%$ \\  \hline
         Sorsele & 47 & 23 & 67.14$\%$ \\ \hline
         Höör & 61 & 9 & 87.14$\%$ \\ \hline
         Linköping & 63 & 7 & 90$\%$ \\ \hline
@@ -356,16 +364,21 @@
     Det är en drastisk skillnad jämfört med Höör och Linköping.
     Sorsele kommun klarar mindre krav i alla kategorier men det är mest i manöverbar kategorin.
     Väldigt många av de misslyckande kraven relaterar till att användaren kan använda tab knappen på tangentbordet för att komma åt ett sökfält som inte visas.
-    %Gör något åt det här%
-    Det här är väldigt subjektivt men känslan jag fick av Sorsele kommun var att den blev skapad och sen hade blivit uppdaterad ett flertal gånger av olika personer.
-    Att skapa en hemsida och sen uppdatera den flera gånger av olika företag med nya funktioner och efter nya regler kostar förmodligen mindre än att skapa en ny hemsida men hemsidan kommer förmodligen att behålla några av de dåliga delarna före uppdateringen.
-    Det är en kommun med liten befolkning så att uppdatera en sida är förmodligen mer logiskt med tanken på kommunens lägre inkomster än resten.
-    Jag fick inte den känslan av Linköpings eller Höörs kommun hemsida.
+    På Sorseles hemsida fanns det vissa funktioner bara på vissa delar av hemsidan.
+    Om man tryckte på länkar för att gå vidare försvann de funktionerna och hur hemsidan såg ut ändrades.
+    Att navigera från till exempel "Omsorg och stöd" till "Orosanmälan för barn eller vuxen" ändrar helt sidans layout.
+    Det var inte något som jag märkte på Linköpings eller Höörs kommun hemsida.
+
+    %Det här är väldigt subjektivt men känslan jag fick av Sorsele kommun var att den blev skapad och sen hade blivit uppdaterad ett flertal gånger av olika personer.
+    %Att skapa en hemsida och sen uppdatera den flera gånger av olika företag med nya funktioner och efter nya regler kostar förmodligen mindre än att skapa en ny hemsida men hemsidan kommer förmodligen att behålla några av de dåliga delarna före uppdateringen.
+    %Det är en kommun med liten befolkning så att uppdatera en sida är förmodligen mer logiskt med tanken på kommunens lägre inkomster än resten.
+    %Jag fick inte den känslan av Linköpings eller Höörs kommun hemsida.
 
     För att resultatet ska vissa något om kommuner generellt skulle fler kommuner undersökas.
     Att undersöka fler kommuner är också en väg att förbättra undersökningen och förstärka resultatet.
-    Det går också att fördjupa sig mer i individuella WCAG krav och kontrollera dem mer noggrant.
-    \textcite{WCAG_2.2} innehåller för varje krav länkar med extra förklaring av innebörden av kravet och förslag på olika väga att testa krav.
+    Att testa fler kommuner på endast en del av WCAG 2.2 skulle förmodligen ge ett resultat där fler slutsatser skulle kunna dras.
+    %Det går också att fördjupa sig mer i individuella WCAG krav och kontrollera dem mer noggrant.
+    %\textcite{WCAG_2.2} innehåller för varje krav länkar med extra förklaring av innebörden av kravet och förslag på olika väga att testa krav.
 
     \section{Referenser}
 
@@ -377,5 +390,5 @@
     \\ https://docs.google.com/spreadsheets/d/1SNX30NQTKxSrTisLqjCoPWqg7aKbZACcXsoCPYrQb6c/
     edit?usp=sharing
 
-
+    \end{otherlanguage}
 \end{document}
