@@ -18,8 +18,8 @@
 \graphicspath{ {./images/} }
 
 % Lite variabler
-\def\email{levi.hogdal@ga.ntig.se}
-\def\foottitle{Gymnasiearbete}
+\def\email{levi.hogdal@elev.ga.ntig.se}
+\def\foottitle{Gymnasiearbete} % Kanske borde ändras
 \def\name{Levi Högdal}
 
 \title{Gymnasiearbete \\ \small Gymnasiearbete}
@@ -28,6 +28,7 @@
 
 
 \begin{document}
+
 
 
 % fixar sidfot
@@ -44,15 +45,70 @@
 % men däremot lite mellanrum
     \setlength{\parskip}{10pt}
     \begin{otherlanguage}{swedish}
-    \maketitle
-    \begin{center}
-    \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
-    \end{center}
+
+
+        \begin{titlepage}
+            \centering
+
+            % Title and subtitle are enclosed between two rules.
+            \rule{\textwidth}{1pt}
+
+            % Title
+            \vspace{.7\baselineskip}
+            {\huge \textbf{Tillgänglighet på Sveriges kommuner}}
+
+            % Subtitle
+            \vspace*{.5cm}
+            {\LARGE Kommunernas anpassning till WCAG 2.2 standarden och generellt användarvänlighet}
+
+            \rule{\textwidth}{1pt}
+
+            \vspace{1cm}
+
+            % Set this size for the remaining titlepage.
+            \large
+
+            % Authors side by side, using two minipages as a trick.
+            \begin{minipage}{.5\textwidth}
+                \centering
+                \name \\
+                {\normalsize \url{levihogdal@elev.ga.ntig.se}}
+            \end{minipage}%
+
+            \vspace{3cm}
+
+            % Report logo.
+            \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
+
+            \vfill
+
+            % University and date information at the bottom of the titlepage.
+            NTI Gymnasiet Umeå \\
+            Teknikprogrammet\\
+            Gymnasiearbete\\
+            Datum: \today \\
+            Handledare: Jens Andreasson
+        \end{titlepage}
+    %\maketitle
+    %\begin{center}
+    %\includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
+    %\end{center}
     \end{otherlanguage}
+
+
     \newpage
     \begin{otherlanguage}{english}
     \begin{abstract}
-        abstract
+        Accessibility on the internet is important for the user and the creator of a website.
+        All users should be abel to use a website even if they have a disability.
+        This study aims to test the accessibility guidelines WCAG 2.2 on the websites of swedish townships (kommuner).
+        Because townships in general were tested the study also includes if townships with less population meet less of the WCAG 2.2 criteria.
+        The method to accomplish this was simply test each criteria of WCAG 2.2 on all the chosen websites.
+        How each criteria of WCAG 2.2 was tested and the result were combined in a spreadsheet that can be found at the end of the study.
+        None of the websites meet all the tested WCAG 2.2 criteria.
+        The worst performing website meet 47/70 of the tested criteria and the best performing website met 63/70 of the tested criteria.
+        The study also showed that there might be a tendency for townships with less population to have a worse performing website but to draw such a conclusion more websites wold have to be tested.
+
     \end{abstract}
     \end{otherlanguage}
     \begin{otherlanguage}{swedish}
@@ -65,21 +121,23 @@
     Att förstå internet och kunna enkelt läsa och navigera olika forum och hemsidor är inte något som personer som har använt internet har problem med.
     Det finns många olika sätt som en hemsida kan se utt men hur ska hemsidor anpassas för folk som har svårt att använda internet.
     Om användaren har någon funktionsnedsättning så kan hemsidan bli väldigt svår att använda och tolka om den inte är anpassad för deras användning.
-    För att underlätta utvecklingen av användarvänliga hemsidor har en organisation som heter W3C skapat standarder(WCAG) för användarvänlighet och tillgänglighet.å
+    För att underlätta utvecklingen av användarvänliga hemsidor har en organisation som heter W3C skapat standarder(WCAG) för användarvänlighet och tillgänglighet.
 
     
     \subsection{Syfte och frågeställning}
     Hur mycket hemsidor förhåller sig till WCAG standarden är varierande men jag är intresserad av hur olika kommunala hemsidor förhåller sig till dem och vilka olika delar av WCAG 2.2 standarden de möter.
     \\Det jag vill undersöka är:
-    Vilka WCAG 2.2 krav uppfyller kommuners hemsidor och vilka skillnader finns det i kraven som kommunerna uppfyller.
-    Finns det några skillnader på antalet invånare i kommunen och hur många krav kommunen uppfyller.
+    \begin{itemize}
+        \item Vilka WCAG 2.2 krav uppfyller kommuners hemsidor och vilka skillnader finns det i kraven som kommunerna uppfyller.
+        \item Finns det några skillnader på antalet invånare i kommunen och hur många krav kommunen uppfyller.
+    \end{itemize}
 
     \section{Bakgrund}
 
     \subsection{Tillgänglighet}
     Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt något ska vara utom att hemsidan ska vara användbar för alla användare, även de med funktionsnedsättning.
     Tillgänglighet handlar om hur enkelt användaren kan fösta hemsidan \parencite{webbriktlinjer}.
-    Det innehåller bland annat:
+    Det innehåller till exempel :
     Hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten.
     Har bilder en bildtext?
     Blinkar hemsidan för mycket?
@@ -177,7 +235,7 @@
     \subsection{Digitala verktyg}
     För att underlätta undersökningen användes 2 digitala verktyg.
     Det första heter web accessibility evaluation tools (WAVE).
-    WAVE är en webb tillägg och hemsida som tillåter automatiskt testning för några WCAG krav \parencite{WAVE}.
+    WAVE är ett digitalt verktyg som tillåter automatiskt testning för några WCAG krav \parencite{WAVE}.
     WAVE kollar kontrasten på innehållet, redovisar HTML strukturen och vart ARIA används på hemsidan.
     Fell i HTML syntax redovisas enkelt och ikoner på hemsidan visas var olika element och attribut används.
 
@@ -190,16 +248,16 @@
 
     \subsubsection{Screen reader}
 
-    Det andra verktyget är en screen reader.
-    En screen reader läser upp ett html element och dess textinnehåll.
+    En screen reader är ett digitalt verktyg som läser upp ett html element och dess textinnehåll.
     Det finns WCAG krav där användaren programmässigt ska kunna bestämma vad något är och vad det har för funktion.
     Till exempel finns WCAG krav 1.3.5 Identify Input Purpose (Level AA) där användaren ska kunna bestämma vilken information ett textinmatningsfält ska få in.
     Med en screen reader ska den berätta för användaren att det är ett textinmatningsfält och vilken information som ska skrivas in.
 
-    \subsection{Komunala Hemsidor}
+    \subsection{Kommunala Hemsidor}
     För att meddela information om en kommun digitalt har kommuner hemsidor som det styr innehållet på och lägger upp information om kommunen.
     Det som är intressant om kommunal hemsidor är att alla hemsidor inte ser likadan ut utan de flesta ser annorlunda.
-    Vissa kommuner har hemsidor som ser likadana ut bara varierande innehåll.
+    Det finns också några kommuner med hemsidor som sek likadana ut bara att de har varierande innehåll.
+    %Vissa kommuner har hemsidor som ser likadana ut bara varierande innehåll.
     Skillnaden i hur kommunala hemsidor ser ut betyder att det finns en skillnad på hur de är uppbyggda och hur det är anpassade för användarvänlighet för webben.
     
     Hemsidorna i undersökningen valdes från listan på \textcite{SverigesKommuner}.
@@ -375,11 +433,13 @@
     %Jag fick inte den känslan av Linköpings eller Höörs kommun hemsida.
 
     För att resultatet ska vissa något om kommuner generellt skulle fler kommuner undersökas.
+    Den enda slutsatsen jag kan dra är att det kanske finns en tendens till att kommuner med lägre antal invånare har en mindre användarvänlig hemsida.
     Att undersöka fler kommuner är också en väg att förbättra undersökningen och förstärka resultatet.
     Att testa fler kommuner på endast en del av WCAG 2.2 skulle förmodligen ge ett resultat där fler slutsatser skulle kunna dras.
     %Det går också att fördjupa sig mer i individuella WCAG krav och kontrollera dem mer noggrant.
     %\textcite{WCAG_2.2} innehåller för varje krav länkar med extra förklaring av innebörden av kravet och förslag på olika väga att testa krav.
 
+    \newpage
     \section{Referenser}
 
     \printbibliography[heading=none]
