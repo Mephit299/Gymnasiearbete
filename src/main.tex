@@ -100,15 +100,15 @@
     \begin{otherlanguage}{english}
     \begin{abstract}
         Accessibility on the internet is important for the user and the creator of a website.
-        All users should be able to use and understan a website if they understand the language of the website.
+        All users should be able to use and understand a website if they understand the language of the website.
         This study aims to test the accessibility guidelines WCAG 2.2 on the websites of Swedish municipalities (kommuner).
         The study also includes if municipalities with less population meet less of the WCAG 2.2 criteria.
-        %Because municipalities in general were tested the study also includes if municipalities with less population meet less of the WCAG 2.2 criteria.
         The method to accomplish this was to test each criteria of WCAG on all the chosen websites.
-        %How each criteria of WCAG 2.2 was tested and the results were combined in a spreadsheet that can be found at the end of the study.
-        None of the websites meet all the tested WCAG criteria. %fråga jens
+        None of the websites meet all the tested WCAG criteria.
         The worst performing website met 47/70 of the tested criteria and the best performing website met 63/70 of the tested criteria.
         The study also showed that there might be a tendency for municipalities with less population to have a worse performing website but to draw such a conclusion more websites would have to be tested.
+        %How each criteria of WCAG 2.2 was tested and the results were combined in a spreadsheet that can be found at the end of the study.
+        %Because municipalities in general were tested the study also includes if municipalities with less population meet less of the WCAG 2.2 criteria.
 
     \end{abstract}
     \end{otherlanguage}
@@ -138,15 +138,15 @@
     \section{Bakgrund}
 
     \subsection{Tillgänglighet}
-    Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt webbplatsen är utom att den ska vara användbar för alla användare. %alla användare inkluderar dom med funktionsnedsättnig
+    Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt webbplatsen, istället handlar tillgänglighet att alla ska kunna använda och förstå webbplatsen. %alla användare inkluderar dom med funktionsnedsättnig
     Tillgänglighet handlar om hur enkelt användaren kan förstå webbplatsen \parencite{webbriktlinjer}.
     I tillgänglighet på webben ingår väldigt mycket men för att ge några exempel ingår bland annat:
     Hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten.
     Blinkar webbplatsen för mycket så den är obehaglig att kolla på.
-    Har ljudbaserad media textalternativ så om användaren är till exempel döve eller är i en högljudd miljö kan fortfarande ta del av informationen.
+    Har ljudbaserad media textalternativ så om användaren är till exempel döv eller är i en högljudd miljö kan fortfarande ta del av informationen.
     \\Webbsidors design och utformning ska vara anpassad så att alla människor ska kunna använda och förstå webbsidan så länge de kan läsa språket.
-    För att webbsidor ska vara tillgänglighets anpassade gör standarder som kan följas när webbsidor skapas och olika lagar.
-    Webbstandarden som den här undersökningen utgår från är WCAG som är utgivet av W3C. %fråga jens
+    För att webbsidor ska vara tillgänglighetsanpassade gör standarder som kan följas när webbsidor skapas och olika lagar.
+    Webbstandarden som den här undersökningen utgår från är WCAG som är utgivet av W3C.
 
 
     \subsection{Webbsidors uppbyggnad}
@@ -159,7 +159,7 @@
     \end{itemize}
     Den här undersökningen är intresserad i HTML, CSS och ARIA men inte Javascript/Typescript.
     Javascript och Typescript är inte relevant till den här undersökningen.
-    Javascript och Typescript används av själva servern för att hantera webbsidan men är inte något som klienten (användaren) interagerar med. %fråga jens
+    Javascript och Typescript används av själva servern för att hantera webbsidan men är inte något som klienten (användaren) ser. %fråga jens
 
     \subsubsection{Hypertext markup language}
     % Du har feedback. Skriv om. %
@@ -170,7 +170,7 @@
     Om den istället skrivs mellan början och slutet av ett element kommer texten att bli påverkad av elementets funktioner och stilar.
     Det gör att texten automatiskt formateras efter elementet och att webbsidan kan förstå innehållet.
     Elementen kan ha tillägg som kallas attribut.
-    Det kan till exempel vara ett id så att css och js kan hitta och interagera med specifikt det elementet och inte alla element av den typen.
+    Det kan till exempel vara ett id som gör att css och js kan hitta och interagera med specifikt det elementet och inte andra element.
 
     %Text som inte är i en tagg kommer att hanteras som normalt textinnehåll och skrivas upp på hemsidan som normal text.
     %Om texten skrivs mellan en öppnings tag och stängnings tagg kommer texten bli påverkan av elementets funktioner och stilar.
@@ -217,7 +217,7 @@
     %Synlighet handlar om att information och innehåll ska vara synligt och tillgängligt för användare.
     \subsubsection{Synlighet} %Att läsa det här är pain and suffering. Typ för lite text i stycket. För mycket information.
     Synlighet handlar om att information och innehåll ska presenteras så att användaren kan ta del av innehållet.
-    Kategorin innehåller bland annat att all information som inte är textbaserad ska det finnas ett textalternativ.
+    Kategorin innehåller bland annat att för all information som inte är textbaserad ska det finnas ett textalternativ.
     Den visuella presentationen av webbplatsen ska vara läsbar och enkel att förstå.
     %Synlighet är indelad i 4 underkategorier:
     %\begin{enumerate}
@@ -235,7 +235,8 @@
     Manövrerbar handlar om att webbplatsen ska vara navigerbar och användbar.
     Det finns flera vägar än bara mus och tangentbord att navigera på en webbplats och de behöver också fungera.
     Webbplatsen ska till exempel vara navigerbar med pekplatta.
-    Användaren ska inte få några anfall eller fysiska reaktioner av att använda webbplatsen. % har dålig inflytning med rästen av texten.
+    Webbplatsen ska inte vara obehaglig att använda och användaren ska inte få några anfall eller fysiska reaktioner av att använda webbplatsen.% har dålig inflytning med rästen av texten.
+    Ett exempel på en webbplats som kan vara obehaglig är att webbplatsen blinkar väldigt mycket.
     %Manövrerbar är indelad i 5 underkategorier:
     %\begin{enumerate}
     %    \item Webbplatsen ska vara navigerbar med endast tangentbord.
@@ -249,9 +250,10 @@
 
     \subsubsection{Begriplighet}
     Begriplighet handlar om att användaren ska förstå innehållet på webbplatsen.
-    Kategorin innehåller bland annat att textinnehåll ska vara läsbart och begripligt.
-    Om användaren gör inmatningsfel ska det förklaras till användaren.
-    Webbplatsen ska fungera på förutsägbara vis, till exempel att om en länktext är ¨Om oss¨ tar länken användaren till en webbsidan med information om webbplatsen eller företaget som är ansvarig för webbplatsen.
+    Kategorin innehåller bland annat att textinnehåll ska vara läsbart och begripligt och
+    om användaren gör inmatningsfel ska det förklaras till användaren.
+    Webbplatsen ska fungera på förutsägbara vis.
+    Till exempel att om en länktext är ¨Om oss¨ tar länken användaren till en webbsidan med information om webbplatsen eller företaget som är ansvarig för webbplatsen.
     %Begriplighet är indelad i 3 underkategorier:
     %\begin{enumerate}
     %    \item Textinnehåll ska vara läsbart och begripligt.
@@ -263,41 +265,51 @@
 
     \subsubsection{Robust}
     Robust relaterar till att olika program ska kunna bestämma vad innehåll betyder och gör.
+    Element har vissa strukturella delar och ska inte användas vart som helst.
     Semantisk mening är viktigt så att olika program kan tolka och förstå webbplatsen.
-    Till exempel webbläsaren eller en screen reader.
+    Exempel på program är en webbläsare och en screen reader.
 
     \subsubsection{Varför WCAG 2.2}
     WCAG är globalt sett den accepterade webbstandarden.
     Lagar och regler som finns i Sverige och EU har referenser till WCAG standarden \parencite{Utförande_av_Dos_lagen}.
-    I den svenska myndighetens kriterier för hur webbplatser ska användarvänlighets anpassas finns det direkt länkat till vilket WCAG som den här undersökningen utgår ifrån. \parencite{Utförande_av_Dos_lagen}
+    I den svenska myndighetens kriterier för hur webbplatser ska användarvänlighets anpassas finns det direkt länkat till vilket WCAG som den här undersökningen utgår ifrån.Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt webbplatsen är utan att alla ska kunna använda och förstå webbplatsen. %alla användare inkluderar dom med funktionsnedsättnig
+    Tillgänglighet handlar om hur enkelt användaren kan förstå webbplatsen \parencite{webbriktlinjer}.
+    I tillgänglighet på webben ingår väldigt mycket men för att ge några exempel ingår bland annat:
+    Hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten.
+    Blinkar webbplatsen för mycket så den är obehaglig att kolla på.
+    Har ljudbaserad media textalternativ så om användaren är till exempel döv eller är i en högljudd miljö kan fortfarande ta del av informationen.
+    \\Webbsidors design och utformning ska vara anpassad så att alla människor ska kunna använda och förstå webbsidan så länge de kan läsa språket.
+    För att webbsidor ska vara tillgänglighetsanpassade gör standarder som kan följas när webbsidor skapas och olika lagar.
+    Webbstandarden som den här undersökningen utgår från är WCAG som är utgivet av W3C.
 
 
     \subsection{Lagar}
     I Sverige finns ¨Lagen om tillgänglighet till digital offentlig service¨ (DOS-lagen)\parencite{Dos-lagen}.
     Lagen ställer krav på offentliga aktörer så att de ska tillgänglighetsanpassa webbplatser och mobila applikationer.
-    Myndigheten för digital förvaltning (Digg) är ansvarig för att se till att lagen följs och se till att lage efterlevs och de utgår från WCAG standarden för att sätta krav på webbplatsen \parencite{Utförande_av_Dos_lagen}. %Kanske inte vad digg gör
+    Myndigheten för digital förvaltning (Digg) är ansvarig för att se till att lagen följs och se till att lage efterlevs \parencite{Utförande_av_Dos_lagen}.
+    Diggs tillsynsmanual för användarvänlighet utgår från WCAG standarden. %Kanske inte vad digg gör
 
     \subsubsection{Offentlig aktör}
     Hur en offentlig aktör definieras finns förklarat i Dos-lagen \parencite{Dos-lagen} och av DIGG \parencite{Om_Dos-lagen} men det kan enklare förklaras som offentlig information från staten som statliga och kommunala myndigheter samt sammanslutningar till dem.
     Information som handlar om utbildning, skola, sjukvård och omsorg måste också följa lagen.
-    Privata aktörer behöver också följa kraven från Dos-lagen om deras verksamhet är någon av de sol listades ovan.
+    Privata aktörer behöver också följa kraven från Dos-lagen om deras verksamhet är någon av de som listades ovan.
 
     \subsection{Digitala verktyg}
-    TIll undersökningen används 2 digitala verktyg.
+    Till undersökningen används 2 digitala verktyg.
     Den första heter web accessibility evaluation tools (WAVE).
     WAVE är ett digitalt verktyg som tillåter automatiskt testning för några WCAG krav \parencite{WAVE}.
-
+    \newpage
     \begin{center}
     \includegraphics[width=1\textwidth]{../images/höörsKommunhemsida_WAVE.png} % Kanske skriva ett förklarande av bliden.
     WAVE resultatet från Höörs kommuns startsida.
     \end{center}
     I bilden finns själva webbsidan och en panel till vänster vilket är WAVE resultatet.
     Panelen innehåller:
-    Erors, felaktiga html element eller felaktig användning av html element.
+    Errors, felaktiga html element eller felaktig användning av html element.
     Alerts, Potentiella problem med webbsidan.
     Structural element, hur många element som ger struktur på webbsidan som användes.
     De elementen har även ikoner som visas på webbsidan där de används.
-    Contrast erors, kontrastfel.
+    Contrast errors, kontrastfel.
     Features, tillägg som ökar användarvänligheten på webbsidan.
     Aria, hur många aria attribut som användes.
     Det finns även ikoner för vart aria användes på webbsidan.
@@ -313,9 +325,9 @@
     Till exempel finns WCAG krav 1.3.5 Identify Input Purpose (Level AA) där användaren ska kunna programmässigt bestämma vilken information som ska skrivas in i ett textinmatningsfält.
     Med en screen reader ska den berätta för användaren att det är ett textinmatningsfält och vilken information som ska skrivas in.
 
-    \subsection{Kommunala webbplatsern} % Är lite överallt.
+    \subsection{Kommunala webbplatser} % Är lite överallt.
     Kommuner har en webbplats där de lägger upp information om kommunen och hitta olika e-tjänster.
-    Alla kommunala webbplatser ser inte lika dana ut och har olika funktionalitet.
+    Alla kommunala webbplatser har inte samma utseende och har olika funktionalitet.
     %Om man jämför webbplatser från olika kommuner ser man att utseendet och designen på webbplatserna är olika.
     På grund av att det finns en skillnad i utseendet finns det också en skillnad i hur webbplatsen är konstruerad och hur den är tillgänglighetsanpassad.
     Det finns också några kommuner med webbplatser som ser likadana ut bara att de har varierande innehåll.
@@ -329,8 +341,8 @@
     Listan är ordnad i folkmängd, störst till minst för alla kommuner i Sverige.
     För undersökningen valdes en webbplats som var bland de högst upp på listan, en i mitten av listen och en längst ner på listan.
     Kommunen som var högst upp på listan var \textcite{Linköpings_kommun}
-    Kommunen i mitten av listan var \textcite{Höörs_kommun}
-    Kommunen längst ner på listan var \textcite{Sorsele_kommun}
+    Kommunen som var i mitten av listan var \textcite{Höörs_kommun}
+    Kommunen som var längst ner på listan var \textcite{Sorsele_kommun}
     %De valda kommunerna blev \textcite{Linköpings_kommun} (störst), \textcite{Höörs_kommun} (i mitten) och \textcite{Sorsele_kommun} (minst).
     
     \section{Metod och Material}
@@ -488,7 +500,7 @@
 
     \section{Diskussion} %mer reflekterande, tänkande och tyckande
     Resultatet av Linköping kommun och Höörs kommun är väldigt lika.
-    Det skiljer endast två krav mellan deras resultat.
+    Det skiljer endast ett krav mellan deras resultat.
     Linköping möter två krav som Höörs inte gör och Höörs ett krav som Linköpings inte möter.
     Det första kravet som  Höörs kommun misslyckas med är 1.1.1 Non-text Content (Level A), det ska finnas textalternativ till ej textbaserad media.
     Bilderna hade inte bildtexter och det beror förmodligen på att personerna som underhåller webbsidan är för lata för att göra bildtexter eller inte förstår varför bildtext borde finnas.
@@ -504,7 +516,7 @@
     Den riktigt intressanta delen är Sorsele kommun som möter 15 mindre krav än Höörs kommun.
     Det är en drastisk skillnad jämfört med Höör och Linköping.
     Sorsele kommun klarar mindre krav i alla kategorier men det är mest i manövrerbar kategorin.
-    4 av de misslyckande kraven relaterar till att användaren kan använda tab knappen på tangentbordet för att komma åt ett sökfält som inte visas.
+    4 av de misslyckande kraven i manövrerbar kategorin relaterar till att användaren kan använda tab knappen på tangentbordet för att komma åt ett sökfält som inte visas.
     Sökfältet borde få CSS stilen display:none; när det inte visas fast får inte det.
     På Sorseles webbplats fanns det funktioner bara på vissa delar av webbplatsen.
     När användaren använder länkar för att gå vidare på webbplatsen försvann vissa funktionerna och hur webbsidan såg ut kunde helt ändrades.
