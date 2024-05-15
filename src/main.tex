@@ -103,10 +103,10 @@
         All users should be able to use and understand a website if they understand the language of the website.
         This study aims to test the accessibility guidelines WCAG 2.2 on the websites of Swedish municipalities (kommuner).
         The study also includes if municipalities with less population meet less of the WCAG 2.2 criteria.
-        The method to accomplish this was to test each criteria of WCAG on all the chosen websites.
-        None of the websites meet all the tested WCAG criteria.
+        The method to accomplish this was to test each criteria of WCAG on all the chosen websites with a manual form.
+        For criteria related to contrast the tool WAVE was used and criteria that specified that content had to be "programmatically determined" the tool screen reader was used.
         The worst performing website met 47/70 of the tested criteria and the best performing website met 63/70 of the tested criteria.
-        The study also showed that there might be a tendency for municipalities with less population to have a worse performing website but to draw such a conclusion more websites would have to be tested.
+        The study also showed that there might be a tendency for municipalities with least population to have a worse performing website but to draw such a conclusion more websites would have to be tested. % kanske ändra
         %How each criteria of WCAG 2.2 was tested and the results were combined in a spreadsheet that can be found at the end of the study.
         %Because municipalities in general were tested the study also includes if municipalities with less population meet less of the WCAG 2.2 criteria.
 
@@ -120,9 +120,9 @@
     \section{Inledning} %byt från hemsidor till webbplatser
     Att kunna använda och navigera en webbplats är något många nuförtiden tar för givet.
     Att förstå internet och kunna enkelt läsa och navigera olika webbplatser är inte det lättaste.
-    Det finns många olika sätt som en webbplats kan se ut men hur ska webbplatser anpassas så att användare enkelt ta del av informationen.
-    Om användaren inte är van med att använda webbplatser kan det bli väldigt svår att använda och tolka webbplatsen.
-    För att användare ska kunna enklare förstå och använda flera olika webbplatser görs olika webbstandarder.
+    Det finns många olika sätt som en webbplats kan se ut men hur ska webbplatser anpassas så att användare enkelt kan ta del av informationen.
+    Om användaren inte är van med att använda webbplatser kan det bli väldigt svårt att använda och tolka webbplatsen.
+    För att användare enklare ska kunna förstå och använda flera olika webbplatser görs olika webbstandarder.
     Webbstandarden som den här undersökningen utgår ifrån är WCAG com är skapad av W3C.
     %För att underlätta utvecklingen av användarvänliga webbplatser har en organisation som heter W3C skapat standarder(WCAG) för användarvänlighet och tillgänglighet.
 
@@ -138,12 +138,12 @@
     \section{Bakgrund}
 
     \subsection{Tillgänglighet}
-    Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt webbplatsen, istället handlar tillgänglighet att alla ska kunna använda och förstå webbplatsen. %alla användare inkluderar dom med funktionsnedsättnig
+    Tillgänglighet i det här sammanhanget betyder inte hur åtkomligt webbplatsen är, istället handlar tillgänglighet om att alla ska kunna använda och förstå webbplatsen. %alla användare inkluderar dom med funktionsnedsättnig
     Tillgänglighet handlar om hur enkelt användaren kan förstå webbplatsen \parencite{webbriktlinjer}.
     I tillgänglighet på webben ingår väldigt mycket men för att ge några exempel ingår bland annat:
     Hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten.
     Blinkar webbplatsen för mycket så den är obehaglig att kolla på.
-    Har ljudbaserad media textalternativ så om användaren är till exempel döv eller är i en högljudd miljö kan fortfarande ta del av informationen.
+    Har ljudbaserad media textalternativ så om användaren är till exempel döv eller i en högljudd miljö kan de fortfarande ta del av informationen.
     \\Webbsidors design och utformning ska vara anpassad så att alla människor ska kunna använda och förstå webbsidan så länge de kan läsa språket.
     För att webbsidor ska vara tillgänglighetsanpassade gör standarder som kan följas när webbsidor skapas och olika lagar.
     Webbstandarden som den här undersökningen utgår från är WCAG som är utgivet av W3C.
@@ -164,7 +164,7 @@
     \subsubsection{Hypertext markup language}
     % Du har feedback. Skriv om. %
     HTML är standardspråket som webbplatser skapas med.
-    HTML är språket som ger struktur och definierar grunden till hur webbplatser ser ut \parencite{HTML}.
+    HTML ger struktur och definierar grunden till hur webbplatser ser ut \parencite{HTML}.
     Språket bestar av element som är skriven på följande vis <html> och </html>.
     Text skriven utanför ett element förlorar all semantisk mening och kommer att skrivas ut på webbplatsen som normal text.
     Om den istället skrivs mellan början och slutet av ett element kommer texten att bli påverkad av elementets funktioner och stilar.
@@ -189,23 +189,23 @@
     Att implementera ARIA på ett felaktigt sätt gör en webbplats som är mindre användarvänlig så HTML element och attribut bör användas istället om det uppfyller samma funktion.
     
     \subsection{The world wide web consortium}
-    The world wide web consortium (W3C) är det företaget som är utgivarna WCAG 2.2 standarden \parencite{W3C}.
+    The world wide web consortium (W3C) är det företaget som är utgivarna av WCAG 2.2 standarden \parencite{W3C}.
     W3C är ett företag som grundades av Tim Berners-Lee med syftet att säkerställa webbens utveckling och framtid.
     För att uppnå målet har de skapat standarder för webben och har diskussioner med flera grupper och organisationer om webben.
     WCAG standarden har de skapat och det är den som undersökningen kommer att utgå ifrån.
 
     \subsection{Web content accessibility guidelines} %kolla hur wcag förklarar det här, kanske ändra namn
     Web content accessibility guidelines (WCAG) är en lista av riktlinjer för webben \parencite{WCAG_2.2}.
-    Målet med riktlinjerna är att göra webben mer tillgänglig och användarvänlig så att alla användare kan enklare förstå och navigera webbplatsen.
+    Målet med riktlinjerna är att göra webben mer tillgänglig och användarvänlig så att alla användare enklare kan förstå och navigera på webbplatsen.
     En del av WCAG standarden är att alla individuella krav ska kunna testas separat.
     De finns 3 olika nivåer av användarvänlighet i WCAG standarden.
     Det är level A, level AA och level AAA.
     Level A är nivån för grundläggande användarvänlighet.
     Level AA är bra användarvänlighet och brukar ses som målet för företag att nå. %utväckla
     Level AAA är fantastisk användarvänlighet.
-    Den här nivån är inte alltid realistisk för en webbplatsen att nå. %utväckla
-    Nivån är väldigt specifik och har höga krav på webbplatsen.
-    WCAG 2.2 är den senaste versionen av WCAG när undersökningen gjordes och den är indelad i 4 stora kategorier.
+    Den här nivån är inte alltid realistisk för en webbplats att nå. %utväckla
+    Nivån var väldigt specifik och har höga krav på webbplatsen.
+    WCAG 2.2 var den senaste versionen av WCAG när undersökningen gjordes och den var indelad i 4 stora kategorier.
     \\De olika delarna är:
     \begin{enumerate}
         \item Synlighet %Uppfattningsbar och synlighet?
@@ -216,7 +216,7 @@
 
     %Synlighet handlar om att information och innehåll ska vara synligt och tillgängligt för användare.
     \subsubsection{Synlighet} %Att läsa det här är pain and suffering. Typ för lite text i stycket. För mycket information.
-    Synlighet handlar om att information och innehåll ska presenteras så att användaren kan ta del av innehållet.
+    Synlighet handlar om att information och innehåll ska presenteras så att användaren kan ta del av innehållet \parencite{WCAG_2.2}.
     Kategorin innehåller bland annat att för all information som inte är textbaserad ska det finnas ett textalternativ.
     Den visuella presentationen av webbplatsen ska vara läsbar och enkel att förstå.
     %Synlighet är indelad i 4 underkategorier:
@@ -232,7 +232,7 @@
     %Den visuella presentationen av hemsidan ska vara läsbar och enkel att förstå.
     
     \subsubsection{Manövrerbar}
-    Manövrerbar handlar om att webbplatsen ska vara navigerbar och användbar.
+    Manövrerbar handlar om att webbplatsen ska vara navigerbar och användbar \parencite{WCAG_2.2}.
     Det finns flera vägar än bara mus och tangentbord att navigera på en webbplats och de behöver också fungera.
     Webbplatsen ska till exempel vara navigerbar med pekplatta.
     Webbplatsen ska inte vara obehaglig att använda och användaren ska inte få några anfall eller fysiska reaktioner av att använda webbplatsen.% har dålig inflytning med rästen av texten.
@@ -249,7 +249,7 @@
     %Hemsidor ska till exempel vara navigerbar med pekskärmar och endast tangentbord.
 
     \subsubsection{Begriplighet}
-    Begriplighet handlar om att användaren ska förstå innehållet på webbplatsen.
+    Begriplighet handlar om att användaren ska förstå innehållet på webbplatsen \parencite{WCAG_2.2}.
     Kategorin innehåller bland annat att textinnehåll ska vara läsbart och begripligt och
     om användaren gör inmatningsfel ska det förklaras till användaren.
     Webbplatsen ska fungera på förutsägbara vis.
@@ -264,7 +264,7 @@
     %Navigationen och språket på hemsidan ska vara tydligt och eventuella fel som användaren gör ska förklaras.
 
     \subsubsection{Robust}
-    Robust relaterar till att olika program ska kunna bestämma vad innehåll betyder och gör.
+    Robust relaterar till att olika program ska kunna bestämma vad innehåll betyder och gör \parencite{WCAG_2.2}.
     Element har vissa strukturella delar och ska inte användas vart som helst.
     Semantisk mening är viktigt så att olika program kan tolka och förstå webbplatsen.
     Exempel på program är en webbläsare och en screen reader.
@@ -277,7 +277,7 @@
     I tillgänglighet på webben ingår väldigt mycket men för att ge några exempel ingår bland annat:
     Hur bra kontrast det är mellan bakgrund och text så att det ska vara enkelt att läsa texten.
     Blinkar webbplatsen för mycket så den är obehaglig att kolla på.
-    Har ljudbaserad media textalternativ så om användaren är till exempel döv eller är i en högljudd miljö kan fortfarande ta del av informationen.
+    Har ljudbaserad media textalternativ så om användaren är till exempel döv eller är i en högljudd miljö fortfarande kan ta del av informationen.
     \\Webbsidors design och utformning ska vara anpassad så att alla människor ska kunna använda och förstå webbsidan så länge de kan läsa språket.
     För att webbsidor ska vara tillgänglighetsanpassade gör standarder som kan följas när webbsidor skapas och olika lagar.
     Webbstandarden som den här undersökningen utgår från är WCAG som är utgivet av W3C.
@@ -286,7 +286,7 @@
     \subsection{Lagar}
     I Sverige finns ¨Lagen om tillgänglighet till digital offentlig service¨ (DOS-lagen)\parencite{Dos-lagen}.
     Lagen ställer krav på offentliga aktörer så att de ska tillgänglighetsanpassa webbplatser och mobila applikationer.
-    Myndigheten för digital förvaltning (Digg) är ansvarig för att se till att lagen följs och se till att lage efterlevs \parencite{Utförande_av_Dos_lagen}.
+    Myndigheten för digital förvaltning (Digg) är ansvarig för att se till att lagen följs och se till att lagen efterlevs \parencite{Utförande_av_Dos_lagen}.
     Diggs tillsynsmanual för användarvänlighet utgår från WCAG standarden. %Kanske inte vad digg gör
 
     \subsubsection{Offentlig aktör}
@@ -301,9 +301,9 @@
     \newpage
     \begin{center}
     \includegraphics[width=1\textwidth]{../images/höörsKommunhemsida_WAVE.png} % Kanske skriva ett förklarande av bliden.
-    WAVE resultatet från Höörs kommuns startsida.
+    Bild 1: WAVE resultatet från Höörs kommuns startsida.
     \end{center}
-    I bilden finns själva webbsidan och en panel till vänster vilket är WAVE resultatet.
+    I Bild 1 finns själva webbsidan och en panel till vänster vilket är WAVE resultatet.
     Panelen innehåller:
     Errors, felaktiga html element eller felaktig användning av html element.
     Alerts, Potentiella problem med webbsidan.
@@ -337,18 +337,18 @@
     %Vissa kommuner har hemsidor som ser likadana ut bara varierande innehåll.
     %Skillnaden i hur kommunala hemsidor ser ut betyder att det finns en skillnad på hur de är uppbyggda och hur det är anpassade för användarvänlighet på webben.
     
-    Webbsidorna i undersökningen valdes från en listan på \textcite{SverigesKommuner}.
+    Webbsidorna i undersökningen valdes från en lista på \textcite{SverigesKommuner}.
     Listan är ordnad i folkmängd, störst till minst för alla kommuner i Sverige.
     För undersökningen valdes en webbplats som var bland de högst upp på listan, en i mitten av listen och en längst ner på listan.
-    Kommunen som var högst upp på listan var \textcite{Linköpings_kommun}
-    Kommunen som var i mitten av listan var \textcite{Höörs_kommun}
-    Kommunen som var längst ner på listan var \textcite{Sorsele_kommun}
+    Kommunen som var högst upp på listan var \textcite{Linköpings_kommun} och hade 166 999 invånare.
+    Kommunen som var i mitten av listan var \textcite{Höörs_kommun} och hade 16 595 invånare.
+    Kommunen som var längst ner på listan var \textcite{Sorsele_kommun} och hade 2 396 invånare.
     %De valda kommunerna blev \textcite{Linköpings_kommun} (störst), \textcite{Höörs_kommun} (i mitten) och \textcite{Sorsele_kommun} (minst).
     
     \section{Metod och Material}
 
     Undersökningen utgick på att testa hur kommunernas webbplatser uppfyller alla krav i WCAG 2.2.
-    Digg och W3C har givit ut en listor över hur kraven kan uppnås i lagen och WCAG 2.2.
+    Digg och W3C har givit ut en lista över hur kraven kan uppnås i lagen och WCAG 2.2.
     För specifikation om WCAG kraven se \textcite{WCAG_2.2}.
     Undersökningen utgick från en sammanställning över WCAG 2.2 kraven och hur de kan mötas.
     För att hitta den sammanställningen se bilaga 1.
@@ -421,11 +421,11 @@
     \subsection{Manövrerbar krav}
     I den andra delen av WCAG, manövrerbar, finns 34 krav varav 31 av dem testades.
     Sorsele kommun mötte 21 och misslyckades med 10 av dem.
-    Totalt lyckades kommunen med 67.74$\%$ av manövrerbar kraven.
+    Totalt lyckades kommunen med 67.74$\%$ av manövrerbarhets kraven.
     \\Höörs kommun mötte 30 och misslyckades med 1 av dem.
-    Totalt lyckades kommunen med 96.77$\%$ av manövrerbar kraven.
+    Totalt lyckades kommunen med 96.77$\%$ av manövrerbarhets kraven.
     \\Linköpings kommun mötte 30 och misslyckades med 1 av dem.
-    Totalt lyckades kommunen med 96.77$\%$ av manövrerbar kraven.
+    Totalt lyckades kommunen med 96.77$\%$ av manövrerbarhets kraven.
     \\Även i den här kategorin ligger Sorsele bakom men Linköping och Höörs kommun möte lika många krav.
 
     \begin{center}
@@ -448,7 +448,7 @@
     Totalt lyckades kommunen med 94.73$\%$ av begriplighets kraven.
     \\Linköpings kommun mötte 18 och misslyckades med 1 av dem.
     Totalt lyckades kommunen med 94.73$\%$ av begriplighets kraven.
-    \\Fortsatt är Linköpings kommun högst i antal möta krav med Höörs kommun rakt bakom och Sorsele kommun i sista plats
+    \\Fortsatt mötte Linköpings kommun högst i antal krav med Höörs kommun rakt bakom och Sorsele kommun på sista plats.
 
     \newpage
     \begin{center}
@@ -498,6 +498,7 @@
     \end{tabular}
     \end{center}
 
+    \newpage
     \section{Diskussion} %mer reflekterande, tänkande och tyckande
     Resultatet av Linköping kommun och Höörs kommun är väldigt lika.
     Det skiljer endast ett krav mellan deras resultat.
@@ -508,9 +509,9 @@
     Kontrastproblemen är förmodligen bara att skaparna eller kommunen ville att designen skulle se ut på ett specifikt sätt.
 
     Kravet som Linköpings kommun inte möter är 1.3.5 Identify Input Purpose (Level AA), informationen som ska in i ett textfält ska kunna bestämmas med ett program.
-    Linköpings kommun verkade hade samma inloggningssida som Sorsele kommun och det gick inte att programmässigt bestämma viken information som skulle in i textinmatningsfälten.
+    Linköpings kommun verkade ha samma inloggningssida som Sorsele kommun och det gick inte att programmässigt bestämma viken information som skulle in i textinmatningsfälten.
     De andra 6 kraven som kommunerna inte möter är på level AA och level AAA.
-    Det är inte en så stor skillnad i antal möta krav som kanske skulle se likadan ut om andra kommuner valdes.
+    Det är inte en så stor skillnad i antal klarade krav som kanske skulle se likadan ut om andra kommuner valdes.
     %Jag tycker att det inte kan dras någon slutsats från den skillnaden utan jag skulle behöva testa mer webbplatser för att dra en slutsats.
 
     Den riktigt intressanta delen är Sorsele kommun som möter 15 mindre krav än Höörs kommun.
@@ -519,10 +520,12 @@
     4 av de misslyckande kraven i manövrerbar kategorin relaterar till att användaren kan använda tab knappen på tangentbordet för att komma åt ett sökfält som inte visas.
     Sökfältet borde få CSS stilen display:none; när det inte visas fast får inte det.
     På Sorseles webbplats fanns det funktioner som bara visades på vissa delar av webbplatsen.
-    När användaren använder länkar för att gå vidare på webbplatsen försvann vissa funktionerna och hur webbsidan såg ut kunde helt ändrades.
-    Att ändra designen på webbplatsen hela tiden kan gör användaren förvirrad om vad olika knappar är och vad de gör.
+    När användaren använder länkar för att gå vidare på webbplatsen försvann vissa funktioner och hur webbsidan såg ut kunde helt ändras.
+    Att ändra designen på webbplatsen hela tiden kan göra användaren förvirrad om vad olika knappar är och vad de gör.
     Att navigera från till exempel ¨Omsorg och stöd¨ till ¨Orosanmälan för barn eller vuxen¨ ändrar helt sidans layout.
-    Det var inte något som märktes på Linköpings eller Höörs kommun webbplatser.
+    Sorseles kommuns webbplats verkade vara skapad och uppdaterad med ny funktioner under längre tid.
+    Det gjorde att webbplatsen inte var helt sammanhängande så funktioner kunde försvinna och designen helt ändras när man navigerade hemsidan.
+    Linköpings och höörs webbplats var mer sammansatt som en helhet och hade förmodligen gjort om hela webbplatsen för att göra en mer användarvänlig hemsida istället för många små uppdateringar.
 
     %Det här är väldigt subjektivt men känslan jag fick av Sorsele kommun var att den blev skapad och sen hade blivit uppdaterad ett flertal gånger av olika personer.
     %Att skapa en hemsida och sen uppdatera den flera gånger av olika företag med nya funktioner och efter nya regler kostar förmodligen mindre än att skapa en ny hemsida men hemsidan kommer förmodligen att behålla några av de dåliga delarna före uppdateringen.
@@ -530,7 +533,8 @@
     %Jag fick inte den känslan av Linköpings eller Höörs kommun hemsida.
 
     För att resultatet ska visa något om kommuner generellt skulle fler kommuner undersökas.
-    Den enda slutsatsen som kan dras är att det kanske finns en tendens till att kommuner med lägre antal invånare har en mindre användarvänlig webbplats.
+    Den enda slutsatsen som kan dras är att det kanske finns en tendens till att de kommuner med minst antal invånare har en mindre användarvänlig webbplats.
+    Kommuner med 100 000 invånare och kommuner med 15 000 invånare verkade ha ungefär lika användarvänliga webbplatser.
     Att undersöka fler kommuner är också en väg att förbättra undersökningen och förstärka resultatet.
     Att testa fler kommuner på endast en del av WCAG 2.2 skulle förmodligen ge ett resultat där fler slutsatser skulle kunna dras.
     Det skulle ge ett starkare resultat för att det skulle bestå av mer data som slutsatser skulle kunna dras ifrån.
@@ -546,9 +550,9 @@
     \section{Bilagor}
     Bilaga 1
     Google spreadsheet:
-    \\ https://docs.google.com/spreadsheets/d/e/
+    \\https://docs.google.com/spreadsheets/d/e/
     \\2PACX-1vT4b-RPc7sfET2uvwcBs0txumqoLYv5NLsBbLu82YSxWc5ZTy
-    \\\_H3eZAPPYyOzse4R0AE8LfQ24HFca-/pubhtml
+    \\_H3eZAPPYyOzse4R0AE8LfQ24HFca-/pubhtml % Endast tillgänglig till personer innom NTI.
 
     Google spreadsheet som pdf:
     \\https://github.com/Mephit299/Gymnasiearbete/blob/master/Metod-Resultat.pdf
